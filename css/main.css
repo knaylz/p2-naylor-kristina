@@ -136,8 +136,6 @@ main {
   background: #d3ad00;
   opacity: .1;
   position: absolute;
-  width: 100%;
-  height: 100%;
 }
 .social-icons {
   display: -webkit-box;
