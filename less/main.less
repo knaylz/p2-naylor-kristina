@@ -4,19 +4,13 @@
     font-family: 'Nunito', sans-serif;
 }
 
-// Global
+// Global Styles
 button-primary {
     .button-primary();
     &:hover {
         background-color: @yellow;
     }
 }
-
-// Nav and Footer
-//nav, footer {
-//    padding: @padding-20;
-//    background-color: @darkgreen;
-//}
 
 header {
     background-color: @white;
@@ -29,12 +23,6 @@ header {
     background-color: @darkgreen;
     padding: @padding-10 @padding-0;
     width: 100%;
-}
-
-.top-bar-div {
-    float: right;
-    padding-right: 2%;
-    display: flex;
 }
 
 .top-bar-div p {
@@ -53,11 +41,6 @@ header {
     max-width: 350px;
 }
 
-.green-white-header {
-    background-image: url("../images/green-white-header.jpg");
-    background-size: cover;
-}
-
 .green-white-header nav ul li a {
     color: #fff;
     text-decoration: none;
@@ -74,12 +57,6 @@ body {
     max-width:100%;
 }
 
-nav {
-    display: inline-block;
-    margin-left:40%;
-    margin-top: 1%;
-}
-
 nav ul li {
     display: inline-block;
     margin-left:70px;
@@ -91,66 +68,18 @@ main {
     max-width:100%
 }
 
+//Home Styles
+
 .home-section p {
     font-size: 1.25rem;
     margin: 0% 30%;
 }
 
-.what-we-do-page-section {
-  position: relative;
-  height: 900px;
-}
-
-
-.what-we-do-page-section h2 {
-  color: @white;
-  font-size: 2.5rem;
-}
-
-.what-we-do-page-section p {
-    text-align: left;
-    font-size: 1.15rem;
-    color: @darkgreen;
-}
-
-.what-we-do-page-section-amanda {
-  height: 900px;
-  position: relative;
-  background-color: @kellygreen;
-}
-
-.what-we-do-page-section-amanda h2 {
-  font-size: 2rem;
-}
-
-.what-we-do-page-section-amanda p {
-  font-size: 1.12rem;
-}
-
-.green-overlapping-div {
-  background-color: @lightgreen;
-  width: 40%;
-  float: right;
-  position: absolute;
-  margin-left: 45%;
-  margin-top: 6%;
-  padding: 2%;
-  border-radius: 1px
-}
-
-.green-overlapping-div h2 {
-  font-size: 2rem;
-  color: @darkgreen;
-}
-
-.jessica-img {
-  position: absolute;
-  margin-left: 5%;
-}
-
 .home-hero {
     background-image: url("../images/walking.jpg");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 500px;
     position: relative;
 }
@@ -162,12 +91,6 @@ main {
     top: 15%;
     right: 4%;
     border-radius: 2px;
-}
-
-.home-icons-div {
-    display: flex;
-    justify-content: space-around;
-    margin: 5% 18%;
 }
 
 .home-icon-p {
@@ -205,6 +128,7 @@ main {
     //width: 100%;
     //height: 100%;
 }
+
 
 .social-icons {
     display: flex;
@@ -250,21 +174,41 @@ footer {
     font-size: .75rem;
 }
 
-//What We Do Page
+//What We Do Styles
+
+.what-we-do-page-section {
+  position: relative;
+  height: 900px;
+}
+
+
+.what-we-do-page-section h2 {
+  color: @white;
+  font-size: 2.5rem;
+}
+
+.what-we-do-page-section-amanda {
+  height: 900px;
+  position: relative;
+  background-color: @kellygreen;
+}
+
+.what-we-do-page-section-amanda h2 {
+  font-size: 2rem;
+}
+
+.what-we-do-page-section-amanda p {
+  font-size: 1.12rem;
+}
+
+.green-overlapping-div h2 {
+  font-size: 2rem;
+  color: @darkgreen;
+}
+
 .what-we-do-hero {
     background-color: #E4EAE1;
     height: 550px;
-}
-
-.white-breasted-bird-img {
-    float: right;
-    max-height: 550px;
-}
-
-.what-we-do-hero-text {
-    float: left;
-    padding: 7% 0% 0% 15%;
-    width: 40%;
 }
 
 .what-we-do-hero-text p {
@@ -278,25 +222,6 @@ footer {
   background-color: @darkgreen;
   margin: 0;
   color: @white;
-}
-
-.amanda-img {
-  position: absolute;
-  margin-left: 34%;
-  margin-top: 7%;
-  float: right;
-}
-
-
-.yellow-overlapping-div {
-  background-color: @yellow;
-  width: 40%;
-  float: left;
-  position: absolute;
-  margin-left: 10%;
-  margin-top: 12%;
-  padding: 2%;
-  border-radius: 2px;
 }
 
 .button-primary {
@@ -340,3 +265,194 @@ button {
   color: #fff;
   text-decoration: none;
 }
+
+
+//Media Queries
+
+//Global
+
+@media(min-width: 320px) {
+    .top-bar-div {
+        float: none;
+        padding-right: 0%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media(min-width: 415px) {
+    .top-bar-div {
+        padding-right: 2%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+//Home Page
+
+@media(min-width:320px) {
+    .home-icons-div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 5% 18%;
+    }    
+}
+
+@media(min-width:1024px) {
+    .home-icons-div {
+        flex-wrap: nowrap;
+    }
+}
+
+//What We Do Page
+
+@media(min-width:320px) {
+    .white-breasted-bird-img {
+        float: right;
+        max-height: 550px;
+        display: none;
+    }
+
+    .what-we-do-hero-text {
+        float: none;
+        padding: 7% 0% 0% 15%;
+        width: 70%;
+        text-align: center;
+    }
+
+    .jessica-img {
+        position: relative;
+        margin-left: 0%;
+        max-width: 100%;
+    }
+
+    .green-overlapping-div {
+        background-color: @lightgreen;
+        width: 100%;
+        float: none;
+        position: relative;
+        margin-left: 0%;
+        margin-top: 0%;
+        padding: 0%;
+        border-radius: 0px;
+        text-align: center;
+    }
+    
+    .what-we-do-green-daisy {
+        display: none;
+      }
+
+      .what-we-do-page-section p {
+        text-align: center;
+        font-size: 1.15rem;
+        color: @darkgreen;
+    }
+
+    .amanda-img {
+        position: relative;
+        margin-left: 0%;
+        margin-top: 0%;
+        float: none;
+        max-width: 100%;
+      }
+
+      .yellow-overlapping-div {
+        background-color: @yellow;
+        width: 100%;
+        float: none;
+        position: relative;
+        margin-left: 0%;
+        margin-top: 0%;
+        padding: 0%;
+        border-radius: 0px;
+        text-align: center;
+      }  
+
+      .what-we-do-yellow-daisy {
+        display: none;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .green-white-header {
+        background-image: none;
+    }
+
+    }
+
+@media(min-width:1024px) {
+    .jessica-img {
+        position: absolute;
+        margin-left: 5%;
+        max-width: 60%;
+    }
+
+    .green-overlapping-div {
+        width: 40%;
+        float: right;
+        position: absolute;
+        margin-left: 45%;
+        margin-top: 6%;
+        padding: 2%;
+        border-radius: 1px;
+        text-align: left;
+      }
+    
+    .what-we-do-green-daisy {
+        display: block;
+      }
+
+    .what-we-do-page-section p {
+        text-align: left;
+    }
+
+    .amanda-img {
+        position: absolute;
+        margin-left: 34%;
+        margin-top: 7%;
+        float: right;
+      }
+
+    .yellow-overlapping-div {
+        width: 40%;
+        float: left;
+        position: absolute;
+        margin-left: 10%;
+        margin-top: 12%;
+        padding: 2%;
+        border-radius: 2px;
+        text-align: left;
+      }
+
+    .what-we-do-yellow-daisy {
+        display: block;
+    }
+
+    nav {                          //may not want eventually?
+        display: inline-block;
+        margin-left:40%;
+        margin-top: 1%;
+    }
+
+    .green-white-header {
+        background-image: url("../images/green-white-header.jpg");
+        background-size: cover;
+    }
+}
+
+@media(min-width:1614px) {
+    .white-breasted-bird-img {
+        float: right;
+        display: block;
+    }
+
+    .what-we-do-hero-text {
+        float: left;
+        width: 40%;
+        text-align: left;
+    }
+}
+

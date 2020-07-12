@@ -32,13 +32,6 @@ header {
   padding: 10px 0px;
   width: 100%;
 }
-.top-bar-div {
-  float: right;
-  padding-right: 2%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
 .top-bar-div p {
   color: #e4eae1;
   margin: 0%;
@@ -52,10 +45,6 @@ header {
   padding-left: 10px;
   margin-left: 2%;
   max-width: 350px;
-}
-.green-white-header {
-  background-image: url("../images/green-white-header.jpg");
-  background-size: cover;
 }
 .green-white-header nav ul li a {
   color: #fff;
@@ -76,11 +65,6 @@ body {
   margin: 0px;
   max-width: 100%;
 }
-nav {
-  display: inline-block;
-  margin-left: 40%;
-  margin-top: 1%;
-}
 nav ul li {
   display: inline-block;
   margin-left: 70px;
@@ -96,51 +80,11 @@ main {
   font-size: 1.25rem;
   margin: 0% 30%;
 }
-.what-we-do-page-section {
-  position: relative;
-  height: 900px;
-}
-.what-we-do-page-section h2 {
-  color: #ffffff;
-  font-size: 2.5rem;
-}
-.what-we-do-page-section p {
-  text-align: left;
-  font-size: 1.15rem;
-  color: #383f34;
-}
-.what-we-do-page-section-amanda {
-  height: 900px;
-  position: relative;
-  background-color: #538731;
-}
-.what-we-do-page-section-amanda h2 {
-  font-size: 2rem;
-}
-.what-we-do-page-section-amanda p {
-  font-size: 1.12rem;
-}
-.green-overlapping-div {
-  background-color: #e4eae1;
-  width: 40%;
-  float: right;
-  position: absolute;
-  margin-left: 45%;
-  margin-top: 6%;
-  padding: 2%;
-  border-radius: 1px;
-}
-.green-overlapping-div h2 {
-  font-size: 2rem;
-  color: #383f34;
-}
-.jessica-img {
-  position: absolute;
-  margin-left: 5%;
-}
 .home-hero {
   background-image: url("../images/walking.jpg");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 500px;
   position: relative;
 }
@@ -151,14 +95,6 @@ main {
   top: 15%;
   right: 4%;
   border-radius: 2px;
-}
-.home-icons-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 5% 18%;
 }
 .home-icon-p {
   font-size: 2.25rem;
@@ -231,18 +167,32 @@ footer {
   color: #e4eae1;
   font-size: .75rem;
 }
+.what-we-do-page-section {
+  position: relative;
+  height: 900px;
+}
+.what-we-do-page-section h2 {
+  color: #ffffff;
+  font-size: 2.5rem;
+}
+.what-we-do-page-section-amanda {
+  height: 900px;
+  position: relative;
+  background-color: #538731;
+}
+.what-we-do-page-section-amanda h2 {
+  font-size: 2rem;
+}
+.what-we-do-page-section-amanda p {
+  font-size: 1.12rem;
+}
+.green-overlapping-div h2 {
+  font-size: 2rem;
+  color: #383f34;
+}
 .what-we-do-hero {
   background-color: #E4EAE1;
   height: 550px;
-}
-.white-breasted-bird-img {
-  float: right;
-  max-height: 550px;
-}
-.what-we-do-hero-text {
-  float: left;
-  padding: 7% 0% 0% 15%;
-  width: 40%;
 }
 .what-we-do-hero-text p {
   margin-bottom: 8%;
@@ -254,22 +204,6 @@ footer {
   background-color: #383f34;
   margin: 0;
   color: #ffffff;
-}
-.amanda-img {
-  position: absolute;
-  margin-left: 34%;
-  margin-top: 7%;
-  float: right;
-}
-.yellow-overlapping-div {
-  background-color: #d3ad00;
-  width: 40%;
-  float: left;
-  position: absolute;
-  margin-left: 10%;
-  margin-top: 12%;
-  padding: 2%;
-  border-radius: 2px;
 }
 .button-primary {
   background: #383f34;
@@ -305,4 +239,171 @@ button {
   border-radius: 3px;
   color: #fff;
   text-decoration: none;
+}
+@media (min-width: 320px) {
+  .top-bar-div {
+    float: none;
+    padding-right: 0%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (min-width: 415px) {
+  .top-bar-div {
+    padding-right: 2%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+@media (min-width: 320px) {
+  .home-icons-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 5% 18%;
+  }
+}
+@media (min-width: 1024px) {
+  .home-icons-div {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+@media (min-width: 320px) {
+  .white-breasted-bird-img {
+    float: right;
+    max-height: 550px;
+    display: none;
+  }
+  .what-we-do-hero-text {
+    float: none;
+    padding: 7% 0% 0% 15%;
+    width: 70%;
+    text-align: center;
+  }
+  .jessica-img {
+    position: relative;
+    margin-left: 0%;
+    max-width: 100%;
+  }
+  .green-overlapping-div {
+    background-color: #e4eae1;
+    width: 100%;
+    float: none;
+    position: relative;
+    margin-left: 0%;
+    margin-top: 0%;
+    padding: 0%;
+    border-radius: 0px;
+    text-align: center;
+  }
+  .what-we-do-green-daisy {
+    display: none;
+  }
+  .what-we-do-page-section p {
+    text-align: center;
+    font-size: 1.15rem;
+    color: #383f34;
+  }
+  .amanda-img {
+    position: relative;
+    margin-left: 0%;
+    margin-top: 0%;
+    float: none;
+    max-width: 100%;
+  }
+  .yellow-overlapping-div {
+    background-color: #d3ad00;
+    width: 100%;
+    float: none;
+    position: relative;
+    margin-left: 0%;
+    margin-top: 0%;
+    padding: 0%;
+    border-radius: 0px;
+    text-align: center;
+  }
+  .what-we-do-yellow-daisy {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  .green-white-header {
+    background-image: none;
+  }
+}
+@media (min-width: 1024px) {
+  .jessica-img {
+    position: absolute;
+    margin-left: 5%;
+    max-width: 60%;
+  }
+  .green-overlapping-div {
+    width: 40%;
+    float: right;
+    position: absolute;
+    margin-left: 45%;
+    margin-top: 6%;
+    padding: 2%;
+    border-radius: 1px;
+    text-align: left;
+  }
+  .what-we-do-green-daisy {
+    display: block;
+  }
+  .what-we-do-page-section p {
+    text-align: left;
+  }
+  .amanda-img {
+    position: absolute;
+    margin-left: 34%;
+    margin-top: 7%;
+    float: right;
+  }
+  .yellow-overlapping-div {
+    width: 40%;
+    float: left;
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 12%;
+    padding: 2%;
+    border-radius: 2px;
+    text-align: left;
+  }
+  .what-we-do-yellow-daisy {
+    display: block;
+  }
+  nav {
+    display: inline-block;
+    margin-left: 40%;
+    margin-top: 1%;
+  }
+  .green-white-header {
+    background-image: url("../images/green-white-header.jpg");
+    background-size: cover;
+  }
+}
+@media (min-width: 1614px) {
+  .white-breasted-bird-img {
+    float: right;
+    display: block;
+  }
+  .what-we-do-hero-text {
+    float: left;
+    width: 40%;
+    text-align: left;
+  }
 }
