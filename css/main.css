@@ -10,6 +10,11 @@ button-primary {
   background-color: #d38407;
   padding: 20px;
   color: #ffffff;
+  background: #383f34;
+  padding: 10px 30px;
+  border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
 }
 button-primary:hover {
   background-color: #d3ad00;
@@ -38,6 +43,7 @@ header {
   color: #e4eae1;
   margin: 0%;
   padding-right: 30px;
+  padding: 5px, 100px, 0px, 0px;
   padding-top: 5px;
   font-size: .75rem;
   font-weight: bold;
@@ -50,6 +56,12 @@ header {
 .green-white-header {
   background-image: url("../images/green-white-header.jpg");
   background-size: cover;
+}
+.green-white-header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.25rem;
 }
 body {
   position: relative;
@@ -84,6 +96,48 @@ main {
   font-size: 1.25rem;
   margin: 0% 30%;
 }
+.what-we-do-page-section {
+  position: relative;
+  height: 900px;
+}
+.what-we-do-page-section h2 {
+  color: #ffffff;
+  font-size: 2.5rem;
+}
+.what-we-do-page-section p {
+  text-align: left;
+  font-size: 1.15rem;
+  color: #383f34;
+}
+.what-we-do-page-section-amanda {
+  height: 900px;
+  position: relative;
+  background-color: #538731;
+}
+.what-we-do-page-section-amanda h2 {
+  font-size: 2rem;
+}
+.what-we-do-page-section-amanda p {
+  font-size: 1.12rem;
+}
+.green-overlapping-div {
+  background-color: #e4eae1;
+  width: 40%;
+  float: right;
+  position: absolute;
+  margin-left: 45%;
+  margin-top: 6%;
+  padding: 2%;
+  border-radius: 1px;
+}
+.green-overlapping-div h2 {
+  font-size: 2rem;
+  color: #383f34;
+}
+.jessica-img {
+  position: absolute;
+  margin-left: 5%;
+}
 .home-hero {
   background-image: url("../images/walking.jpg");
   background-size: cover;
@@ -97,8 +151,6 @@ main {
   top: 15%;
   right: 4%;
   border-radius: 2px;
-  border-top: solid 5px #383f34;
-  border-bottom: solid 5px #383f34;
 }
 .home-icons-div {
   display: -webkit-box;
@@ -178,4 +230,79 @@ footer {
   text-align: center;
   color: #e4eae1;
   font-size: .75rem;
+}
+.what-we-do-hero {
+  background-color: #E4EAE1;
+  height: 550px;
+}
+.white-breasted-bird-img {
+  float: right;
+  max-height: 550px;
+}
+.what-we-do-hero-text {
+  float: left;
+  padding: 7% 0% 0% 15%;
+  width: 40%;
+}
+.what-we-do-hero-text p {
+  margin-bottom: 8%;
+}
+.what-we-do-page-center-h2 {
+  text-align: center;
+  font-size: 2.25rem;
+  padding: 5% 0%;
+  background-color: #383f34;
+  margin: 0;
+  color: #ffffff;
+}
+.amanda-img {
+  position: absolute;
+  margin-left: 34%;
+  margin-top: 7%;
+  float: right;
+}
+.yellow-overlapping-div {
+  background-color: #d3ad00;
+  width: 40%;
+  float: left;
+  position: absolute;
+  margin-left: 10%;
+  margin-top: 12%;
+  padding: 2%;
+  border-radius: 2px;
+}
+.button-primary {
+  background: #383f34;
+  padding: 10px 30px;
+  border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+}
+.what-we-do-hero-text h1 {
+  color: #383F34;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+.what-we-do-page-section {
+  background-color: #383f34;
+}
+.inside-overlapping-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.what-we-do-hero-text p {
+  font-size: 1.5rem;
+  color: #538731;
+}
+#more {
+  display: none;
+}
+button {
+  background: #383f34;
+  padding: 10px 30px;
+  border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
 }
