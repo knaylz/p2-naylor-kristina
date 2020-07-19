@@ -14,6 +14,7 @@
   <body>
     <div class="top-bar">
       <div class="top-bar-div">
+        <img class="top-phone-icon" src="images/phone-icon.svg" alt="telephone">
         <p>800-555-5555</p>
         <div class="social-icons">
           <img class="social-img" src="images/facebook.svg" alt="facebook">
@@ -25,18 +26,99 @@
       </div>
     </div>
     <header class="green-white-header">
-            <a href="index.html"><img class="logo" src="images/Pretty-Parks-Logo.png"></a>
-            <nav>
-              <ul>
-                <li><a href="what-we-do.html">What We Do</a></li>
-                <li><a href="volunteer.html">Volunteer</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </nav>
-    </header>
-    <main>
-        
-    </main>
+      <a href="index.html"><img class="logo" src="images/Pretty-Parks-Logo.png"></a>
+          <nav>
+            <button class="hamburger" id="hamburger">
+              <img src="images/hamburger-img.png">
+            </button>
+            <ul class="nav-ul" id="nav-ul">
+              <li><a href="what-we-do.html">What We Do</a></li>
+              <li><a href="volunteer.html">Volunteer</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+  </header>
+   
+   <main>
+     <div>
+     <section class="volunteer-section">
+      <h1>See All Volunteer Opportunities:</h1>
+        <ul id="nav-tab" class="nav">
+          <li><a href="#concerts">Concerts</a></li>
+          <li><a href="#yoga-in-the-park">Yoga In The Park</a></li>
+          <li><a href="#cleanups">Cleanups</a></li>
+          <li><a href="#guided-tours">Guided Tours</a></li>
+        </ul>
+        <div class="container">
+          <div class="tab-content">
+            <div class="tab-pane active" id="home">
+              <h4>Home Panel Content</h4>
+              <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
+                Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+            </div>
+          <div class="tab-content"></div>
+            <div class="tab-pane" id="concerts">
+              <h4>Home Panel Content</h4>
+              <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
+                Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+            </div>
+          <div class="tab-pane" id="yoga-in-the-park">
+            <h4>Home Panel Content</h4>
+            <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
+              Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+            </p>
+          </div>
+          <div class="tab-pane" id="cleanups">
+            <h4>Home Panel Content</h4>
+            <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+              Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+            </p>
+          </div>
+          <div class="tab-pane" id="guided-tour">
+            <h4>Home Panel Content</h4>
+            <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+              Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+            </p>
+          </div>
+        </div>
+    </section>
+    <section class="volunteer-quote-section">
+      <h2>See what everyone's talking about — Pretty Parks volunteers share their experiences:</h2>
+      <div class="quote-div">
+        <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+          Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum.
+        </p>
+        <img src="images/couple.jpg" alt="">
+      </div>
+    </section>
+
+
+    <h1>My Random Quote for You:</h1>
+    <div id="my-quote">
+      Hello. this is my first quote.
+    </div>
+
+
+<!--Tabbed Content-->
+<div id="tabbed-content">
+  <ul class="tabs">
+    <li data-target="#about" class="active">About</li>  <!--represents tab to be clicked on-->
+    <li data-target="#contact">Contact</li>
+  </ul>
+  <div class="panel active" id="about">  <!-- these are content panels -->
+    <p>Content about tab...</p>
+    <p>Lorem Ipsum yeah yeah yeah!</p>
+  </div>
+  <div class="panel" id="contact">
+    <p>Content for contact tab...</p>
+    <p>Contact tab yeah yeah yeah!</p>
+  </div>
+</div>
+
+
+
+  </main>
+
     <footer>
       <div class="footer-divs">
         <div class="footer-left-div">
