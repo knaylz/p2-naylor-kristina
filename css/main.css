@@ -63,6 +63,7 @@ body {
   min-height: 100vh;
   margin: 0px;
   max-width: 100%;
+  background-color: #e4eae1;
 }
 nav ul {
   display: -webkit-box;
@@ -84,6 +85,10 @@ main {
           flex: 1;
   max-width: 100%;
 }
+.what-we-do-main {
+  max-width: 1700px;
+  margin: auto;
+}
 .home-section p {
   font-size: 1.25rem;
   margin: 0% 30%;
@@ -93,7 +98,7 @@ main {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 500px;
+  height: 650px;
   position: relative;
 }
 .home-hero-overlay-message {
@@ -147,27 +152,8 @@ footer {
   padding: 20px 0px;
   width: 100%;
 }
-.footer-divs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.footer-left-div {
-  text-align: center;
-  color: #e4eae1;
-  padding: 1% 3%;
-}
-.footer-middle-div {
-  text-align: center;
-  padding: 3% 0%;
-}
-.footer-right-div {
-  text-align: right;
-  color: #e4eae1;
-  padding: 1% 3%;
+.footer-right-div p {
+  line-height: .5rem;
 }
 .bottom-p-footer {
   bottom: 10px;
@@ -177,7 +163,7 @@ footer {
 }
 .what-we-do-page-section {
   position: relative;
-  height: 900px;
+  height: 650px;
 }
 .what-we-do-page-section h2 {
   color: #ffffff;
@@ -187,6 +173,9 @@ footer {
   height: 900px;
   position: relative;
   background-color: #538731;
+}
+.what-we-do-before-bottom-div-amanda {
+  margin-bottom: 10%;
 }
 .what-we-do-page-section-amanda h2 {
   font-size: 2rem;
@@ -201,6 +190,9 @@ footer {
 .what-we-do-hero {
   background-color: #E4EAE1;
   height: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .what-we-do-hero-text p {
   margin-bottom: 8%;
@@ -290,33 +282,31 @@ button {
     margin-top: 1%;
     width: 70%;
   }
-}
-@media (min-width: 415px) {
-  .top-bar-div {
-    padding-right: 2%;
+  .footer-divs {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-}
-@media (min-width: 1024px) {
-  .logo {
-    max-width: 350px;
-    padding-top: 0px;
+  .footer-left-div {
+    text-align: center;
+    color: #e4eae1;
+    padding: 1% 1%;
+    width: 100%;
   }
-  .hamburger {
-    display: none;
+  .footer-right-div {
+    text-align: center;
+    color: #e4eae1;
+    padding: 1.2% 3%;
+    width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
-  nav {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-@media (min-width: 320px) {
   .home-icons-div {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -327,24 +317,15 @@ button {
         justify-content: space-around;
     margin: 5% 18%;
   }
-}
-@media (min-width: 1024px) {
-  .home-icons-div {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-}
-@media (min-width: 320px) {
   .white-breasted-bird-img {
-    float: right;
-    max-height: 550px;
     display: none;
   }
   .what-we-do-hero-text {
     float: none;
-    padding: 7% 0% 0% 15%;
-    width: 70%;
+    padding: 8% 0% 8% 0%;
+    width: 80%;
     text-align: center;
+    margin: auto;
   }
   .jessica-img {
     position: relative;
@@ -415,13 +396,16 @@ button {
   }
   .volunteer-section {
     background-color: #383f34;
-    margin-bottom: 4%;
-    padding: 1% 7% 7% 1%;
+    padding: 1% 7% 7% 7%;
   }
   .volunteer-section h1 {
     color: #e4eae1;
     padding: 4%;
     text-align: center;
+    font-size: 3rem;
+  }
+  .volunteer-yellow-span {
+    color: #d3ad00;
   }
   .container {
     margin-top: 10%;
@@ -432,20 +416,34 @@ button {
     border-radius: 30px;
   }
   .volunteer-quote-section {
-    padding: 0% 20%;
+    background-color: #e4eae1;
   }
   .volunteer-quote-section h2 {
-    padding: 0% 10% 5% 10%;
+    padding: 5% 10% 5% 10%;
     text-align: center;
+    color: #383f34;
+    margin: 0%;
+  }
+  .around-quote-div {
+    position: relative;
+    padding-bottom: 10%;
   }
   .quote-div {
-    border: 4px solid #d3ad00;
+    background-color: #fff;
     border-radius: 3px;
-    padding: 3%;
-    text-align: center;
+    padding: 4% 3%;
+    text-align: left;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: 0% 20%;
+    position: relative;
+  }
+  .quote-div-inside {
+    padding: 2% 3% 1% 1%;
+  }
+  .quote-byline {
+    float: left;
   }
   #nav-tab {
     display: -webkit-box;
@@ -468,7 +466,7 @@ button {
   #nav-tab li a {
     text-decoration: none;
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: #383f34;
     font-weight: bold;
   }
@@ -503,33 +501,49 @@ button {
   #tabbed-content .panel.active {
     display: block;
   }
-  #modal {
-    position: fixed;
-    font-family: Arial, Helvetica, sans-serif;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 99999;
-    height: 100%;
-    width: 100%;
-  }
-  .modalconent {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    background: #fff;
-    width: 80%;
-    padding: 20px;
-  }
-  .what-we-do-hero-text {
-    float: left;
-    width: 40%;
-    text-align: left;
+}
+@media (min-width: 415px) {
+  .top-bar-div {
+    padding-right: 2%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 }
-@media (min-width: 320px) and (min-width: 1024px) {
+@media (min-width: 768px) {
+  .home-icons-div {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin: 5% 2%;
+  }
+}
+@media (min-width: 1024px) {
+  .footer-divs {
+    -ms-flex-wrap: no-wrap;
+        flex-wrap: no-wrap;
+  }
+  .footer-left-div {
+    width: 20%;
+  }
+  .footer-right-div {
+    text-align: right;
+    width: 30%;
+  }
+  .logo {
+    max-width: 350px;
+    padding-top: 0px;
+  }
+  .hamburger {
+    display: none;
+  }
+  nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .nav-ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -558,9 +572,10 @@ button {
   }
   .amanda-img {
     position: absolute;
-    margin-left: 34%;
+    margin-left: 32%;
     margin-top: 7%;
     float: right;
+    max-width: 60%;
   }
   .yellow-overlapping-div {
     width: 40%;
@@ -580,9 +595,47 @@ button {
     background-size: cover;
   }
 }
-@media (min-width: 320px) and (min-width: 1614px) {
+@media (min-width: 1100px) {
   .white-breasted-bird-img {
     float: right;
+    max-height: 550px;
     display: block;
+  }
+  .what-we-do-hero-text {
+    float: left;
+    padding: 8% 0% 8% 5%;
+    max-width: 100%;
+    text-align: left;
+    margin: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .home-icons-div {
+    margin: 5% 12%;
+  }
+}
+@media (min-width: 1300px) {
+  .home-icons-div {
+    margin: 5% 16%;
+  }
+  .what-we-do-before-bottom-div-jessica {
+    background-color: #383f34;
+  }
+  .what-we-do-before-bottom-div-amanda {
+    background-color: #538731;
+  }
+  .what-we-do-bottom-div {
+    max-width: 80%;
+    margin: auto;
+  }
+}
+@media (min-width: 1614px) {
+  .white-breasted-bird-img {
+    float: right;
+    max-height: 550px;
+    display: block;
+  }
+  .what-we-do-hero-text {
+    padding: 8% 20% 8% 10%;
   }
 }

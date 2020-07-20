@@ -55,6 +55,7 @@ body {
     min-height: 100vh;
     margin: @margin-0;
     max-width:100%;
+    background-color: @lightgreen;
 }
 
 nav ul {
@@ -74,7 +75,12 @@ nav ul li {
 
 main {
     flex: 1;
-    max-width:100%
+    max-width: 100%;
+}
+
+.what-we-do-main {
+    max-width: 1700px;
+    margin: auto;
 }
 
 //Home Styles
@@ -89,7 +95,7 @@ main {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 500px;
+    height: 650px;
     position: relative;
 }
 
@@ -154,26 +160,8 @@ footer {
     width: 100%;
 }
 
-.footer-divs {
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer-left-div {
-    text-align: center;
-    color: @lightgreen;
-    padding: 1% 3%;
-}
-
-.footer-middle-div {
-    text-align: center;
-    padding: 3% 0%;
-}
-
-.footer-right-div {
-    text-align: right;
-    color: @lightgreen;
-    padding:  1% 3%;
+.footer-right-div p {
+    line-height: .5rem;
 }
 
 .bottom-p-footer {
@@ -187,7 +175,7 @@ footer {
 
 .what-we-do-page-section {
   position: relative;
-  height: 900px;
+  height: 650px;
 }
 
 
@@ -200,6 +188,10 @@ footer {
   height: 900px;
   position: relative;
   background-color: @kellygreen;
+}
+
+.what-we-do-before-bottom-div-amanda {
+    margin-bottom: 10%;
 }
 
 .what-we-do-page-section-amanda h2 {
@@ -218,6 +210,7 @@ footer {
 .what-we-do-hero {
     background-color: #E4EAE1;
     height: 550px;
+    display: flex;
 }
 
 .what-we-do-hero-text p {
@@ -276,7 +269,7 @@ button {
 }
 
 
-//Media Queries
+////////////////////////////////// Media Query Min-Width 320px Start //////////////////////////////////
 
 //Global
 
@@ -317,63 +310,45 @@ button {
        width: 70%;
    }
 
+   .footer-divs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   }  
 
-}
+   .footer-left-div {
+    text-align: center;
+    color: @lightgreen;
+    padding: 1% 1%;
+    width: 100%;
+   }
 
-@media(min-width: 415px) {
-    .top-bar-div {
-        padding-right: 2%;
-        display: flex;
-        justify-content: flex-end;
-    }
-}
-
-@media(min-width: 1024px) {
-    .logo {
-        max-width: 350px;
-        padding-top: 0px;
-    }
-
-    .hamburger {
-        display: none;
-    }
-
-    nav {
-        justify-content: space-between;
-    }
-}
+   .footer-right-div {
+    text-align: center;
+    color: @lightgreen;
+    padding:  1.2% 3%;
+    width: 100%;
+    flex: 1;
+   }
 
 //Home Page
-
-@media(min-width:320px) {
     .home-icons-div {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         margin: 5% 18%;
     }    
-}
 
-@media(min-width:1024px) {
-    .home-icons-div {
-        flex-wrap: nowrap;
-    }
-}
-
-//What We Do Page
-
-@media(min-width:320px) {
     .white-breasted-bird-img {
-        float: right;
-        max-height: 550px;
         display: none;
     }
 
     .what-we-do-hero-text {
         float: none;
-        padding: 7% 0% 0% 15%;
-        width: 70%;
+        padding: 8% 0% 8% 0%;
+        width: 80%;
         text-align: center;
+        margin: auto;
     }
 
     .jessica-img {
@@ -430,13 +405,11 @@ button {
 
       .nav-ul {
         display: none;
-       // flex-direction: column;
         width: 100%;
         justify-content: flex-end;
       }
 
       .nav-ul.show {
-          //display: flex;
           text-decoration: none;
           width: 100%;
       }
@@ -458,14 +431,18 @@ button {
 // Volunteer Page
 .volunteer-section {
     background-color: @darkgreen;
-    margin-bottom: 4%;
-    padding: 1% 7% 7% 1%;
+    padding: 1% 7% 7% 7%;
 }
 
 .volunteer-section h1 {
     color: @lightgreen;
     padding: 4%;
     text-align: center;
+    font-size: 3rem;
+}
+
+.volunteer-yellow-span {
+    color: @yellow;
 }
 
 .container {
@@ -478,20 +455,37 @@ button {
     }
 
 .volunteer-quote-section {
-    padding: 0% 20%;
+    background-color: @lightgreen;
 }
 
 .volunteer-quote-section h2 {
-    padding: 0% 10% 5% 10%;
+    padding: 5% 10% 5% 10%;
     text-align: center;
+    color: @darkgreen;
+    margin: 0%;
+}
+
+.around-quote-div {
+    position: relative;
+    padding-bottom: 10%;
 }
 
 .quote-div {
-    border: 4px solid @yellow;
+    background-color: #fff;
     border-radius: 3px;
-    padding: 3%;
-    text-align: center;
+    padding: 4% 3%;
+    text-align: left;
     display: flex;
+    margin: 0% 20%;
+    position: relative;
+}
+
+.quote-div-inside {
+    padding: 2% 3% 1% 1%;
+}
+
+.quote-byline {
+    float: left;
 }
 
 #nav-tab {
@@ -513,7 +507,7 @@ button {
 #nav-tab li a {
     text-decoration: none;
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: @darkgreen;
     font-weight: bold;
 }
@@ -536,7 +530,6 @@ button {
 }    
 
 //Tabbed Content
-
 #tabbed-content li {
     display: inline-block;
     padding: 10px 14px;
@@ -556,38 +549,63 @@ button {
 #tabbed-content .panel.active {
     display: block;
 }
-
-
-
-//Modal Popup Ad
-#modal {
-    position: fixed;
-    font-family: Arial, Helvetica, sans-serif;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 99999;
-    height: 100%;
-    width: 100%;
-}
-.modalconent {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #fff;
-    width: 80%;
-    padding: 20px;
 }
 
+////////////////////////////////// Media Query Min-Width 415px Start //////////////////////////////////
 
 
+@media(min-width: 415px) {
+    .top-bar-div {
+        padding-right: 2%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
 
-@media(min-width:1024px) {
+////////////////////////////////// Media Query Min-Width 768px Start ///////////////////////////////////
+
+@media(min-width: 768px) {
+.home-icons-div {
+    flex-wrap: nowrap;
+    margin: 5% 2%;
+ }
+}   
+
+////////////////////////////////// Media Query Min-Width 1024px Start //////////////////////////////////
+
+@media(min-width: 1024px) {
+
+ //Global
+ 
+ .footer-divs {
+    flex-wrap: no-wrap;
+   }  
+
+   .footer-left-div {
+    width: 20%;
+   }
+
+   .footer-right-div {
+    text-align: right;
+    width: 30%;
+   }
+
+    .logo {
+        max-width: 350px;
+        padding-top: 0px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+//What We Do Page
 
     .nav-ul {
-      //  display: block;
-
       display: flex;
       }
 
@@ -618,9 +636,10 @@ button {
 
     .amanda-img {
         position: absolute;
-        margin-left: 34%;
+        margin-left: 32%;
         margin-top: 7%;
         float: right;
+        max-width: 60%;
       }
 
     .yellow-overlapping-div {
@@ -644,15 +663,66 @@ button {
     }
 }
 
+////////////////////////////////// Media Query Min-Width 1100px Start //////////////////////////////////
+
+@media(min-width:1100px) {
+    .white-breasted-bird-img {
+        float: right;
+        max-height: 550px;
+        display: block;
+    }
+
+    .what-we-do-hero-text {
+        float: left;
+        padding: 8% 0% 8% 5%;
+        max-width: 100%;
+        text-align: left;
+        margin: 0;
+    }
+}
+
+////////////////////////////////// Media Query Min-Width 1200px Start //////////////////////////////////
+
+@media(min-width:1200px) {
+    .home-icons-div {
+      margin: 5% 12%;
+    }
+}
+////////////////////////////////// Media Query Min-Width 1300px Start //////////////////////////////////
+
+@media(min-width:1300px) {
+
+//Home Page
+    .home-icons-div {
+    margin: 5% 16%;
+}
+//What We Do Page
+    .what-we-do-before-bottom-div-jessica {
+        background-color: @darkgreen;
+    }
+
+    .what-we-do-before-bottom-div-amanda {
+        background-color: @kellygreen;
+    }
+
+    .what-we-do-bottom-div {
+        max-width: 80%;
+        margin: auto;
+    }
+
+}
+
+////////////////////////////////// Media Query Min-Width 1614px Start //////////////////////////////////
+
 @media(min-width:1614px) {
     .white-breasted-bird-img {
         float: right;
+        max-height: 550px;
         display: block;
     }
-}
+
     .what-we-do-hero-text {
-        float: left;
-        width: 40%;
-        text-align: left;
+        padding: 8% 20% 8% 10%;
     }
 }
+
