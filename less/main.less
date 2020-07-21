@@ -4,7 +4,7 @@
     font-family: 'Nunito', sans-serif;
 }
 
-// Global Styles
+/////////////// Global Styles /////////////////
 
 button-primary {
     .button-primary();
@@ -67,12 +67,6 @@ nav ul li {
     margin: 0% 5%;
 }
 
-/*nav ul li {
-    display: inline-block;
-    margin-left:70px;
-    color: @white;
-}*/
-
 main {
     flex: 1;
     max-width: 100%;
@@ -83,7 +77,7 @@ main {
     margin: auto;
 }
 
-//Home Styles
+////////////////// Home Styles /////////////////////
 
 .home-section p {
     font-size: 1.25rem;
@@ -140,8 +134,6 @@ main {
     background: @yellow;
     opacity: .1;
     position: absolute;
-    //width: 100%;
-    //height: 100%;
 }
 
 
@@ -171,13 +163,12 @@ footer {
     font-size: .75rem;
 }
 
-//What We Do Styles
+///////////////// What We Do Styles ///////////////////
 
 .what-we-do-page-section {
   position: relative;
   height: 650px;
 }
-
 
 .what-we-do-page-section h2 {
   color: @white;
@@ -192,6 +183,7 @@ footer {
 
 .what-we-do-before-bottom-div-amanda {
     margin-bottom: 10%;
+    margin-top: 5%;
 }
 
 .what-we-do-page-section-amanda h2 {
@@ -254,7 +246,7 @@ footer {
     color: @kellygreen;
 }
 
-// Read More Read Less button
+////// Read More Read Less button /////////
 
 #more {
   display: none;
@@ -268,6 +260,14 @@ button {
   text-decoration: none;
 }
 
+/////////////////// Volunteer Page /////////////////
+.tab-pane { 
+    display: none;
+  }
+  
+.tab-pane.active { 
+    display: block; 
+}
 
 ////////////////////////////////// Media Query Min-Width 320px Start //////////////////////////////////
 
@@ -412,6 +412,7 @@ button {
       .nav-ul.show {
           text-decoration: none;
           width: 100%;
+          display: block;
       }
 
       .nav-ul.show li {

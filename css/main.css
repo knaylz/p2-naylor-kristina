@@ -74,11 +74,6 @@ nav ul {
 nav ul li {
   margin: 0% 5%;
 }
-/*nav ul li {
-    display: inline-block;
-    margin-left:70px;
-    color: @white;
-}*/
 main {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -176,6 +171,7 @@ footer {
 }
 .what-we-do-before-bottom-div-amanda {
   margin-bottom: 10%;
+  margin-top: 5%;
 }
 .what-we-do-page-section-amanda h2 {
   font-size: 2rem;
@@ -239,6 +235,12 @@ button {
   border-radius: 3px;
   color: #fff;
   text-decoration: none;
+}
+.tab-pane {
+  display: none;
+}
+.tab-pane.active {
+  display: block;
 }
 @media (min-width: 320px) {
   .top-bar-div {
@@ -382,6 +384,7 @@ button {
   .nav-ul.show {
     text-decoration: none;
     width: 100%;
+    display: block;
   }
   .nav-ul.show li {
     background: #538731;

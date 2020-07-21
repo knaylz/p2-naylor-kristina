@@ -25,41 +25,43 @@ hamburger.addEventListener('click', () => {
 
 
 //Tabbed Content
-const tabs = document.querySelector('.tabs');
-const panels = document.querySelectorAll('.panel');
-tabs.addEventListener('click', function(e){
-  if(e.target.tagName == "LI"){
-    const targetPanel = document.querySelector(e.target.dataset.target);
-    panels.forEach(function(panel){
-      if (panel == targetPanel){
-        panel.classList.add('active');
-      } else {
-        panel.classList.remove('active');
-      }
-    })
-  }
-})
+
+function onTabClick(event) {
+  let activeTabs = document.querySelectorAll('.active');
+
+activeTabs.forEach(function(tab) {
+  tab.className = tab.className.replace('active', '');
+});
+
+// activate new tab and panel
+event.target.parentElement.className += ' active';
+document.getElementById(event.target.href.split('#')[1]).className += ' active';
+}
+
+const element = document.getElementById('nav-tab');
+
+element.addEventListener('click', onTabClick, false);
 
 //Popup Ad
-window.onload = function () {
-  document.getElementById('button').onclick = function () {
-      document.getElementById('modal').style.display = "none"
-  };
-};       
+//window.onload = function () {
+//  document.getElementById('button').onclick = function () {
+//      document.getElementById('modal').style.display = "none"
+ // };
+//};       
 
 //Random Quotes
-var quotes = ["look in the mirror. Are you looking at me?",
-              "It is time for a rhyme, I guess.",
-              "Where is my JavScript book?",
-              "If I had a buck for every dollar I spent. Ooops!"
-              "I am quote number 5",
-              "I am quote number 6",
-              "I am quote number 7",
-              "I am quote number 8",
-              "I am quote number 9",
-              "I am quote number 10"
-];
+//var quotes = ["look in the mirror. Are you looking at me?",
+//              "It is time for a rhyme, I guess.",
+ //             "Where is my JavScript book?",
+ //             "If I had a buck for every dollar I spent. Ooops!"
+ //             "I am quote number 5",
+  //            "I am quote number 6",
+ //             "I am quote number 7",
+ //             "I am quote number 8",
+ //             "I am quote number 9",
+ //             "I am quote number 10"
+//];
 
-var q_div = document.getElementById("my-quote");
-var rand_int = Math.floor(Math.random() * 10);
-q_div.innerHTML = quotes[rand_int];
+//var q_div = document.getElementById("my-quote");
+////var rand_int = Math.floor(Math.random() * 10);
+//q_div.innerHTML = quotes[rand_int];
