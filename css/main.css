@@ -226,7 +226,7 @@ footer {
   font-size: 1.5rem;
   color: #538731;
 }
-#more {
+.more {
   display: none;
 }
 button {

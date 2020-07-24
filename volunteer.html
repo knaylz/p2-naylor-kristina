@@ -38,17 +38,23 @@
             </ul>
           </nav>
   </header>
-   
+  <nav clas="js-nav">
+    <ul>
+      <li>Staff</li>
+      <li>Volunteers</li>
+    </ul>
+  </nav>
    <main>
      <div>
      <section class="volunteer-section">
       <h1>Love Nature? <span class="volunteer-yellow-span">Volunteer!</span></h1>
-        <!-- Tabbed Content Start -->
+
+    <!-- Tabbed Content Start -->
         <ul id="nav-tab" class="nav">
-          <li class="active"><a href="#concerts">Concerts</a></li>
-          <li><a href="#yoga">Yoga In The Park</a></li>
-          <li><a href="#cleanups">Cleanups</a></li>
-          <li><a href="#guidedtours">Guided Tours</a></li>
+          <li class="active concerts"><a href="#">Concerts</a></li>
+          <li class="yoga"><a href="#">Yoga In The Park</a></li>
+          <li class="cleanups"><a href="#">Cleanups</a></li>
+          <li class="sponsor"><a href="#">Sponsor Message</a></li>
         </ul>
         <div class="container">
             <div class="tab-pane active" id="concerts">
@@ -67,11 +73,16 @@
               Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
             </p>
           </div>
-          <div class="tab-pane" id="guidedtours">
-            <h4>Guided Tour Content</h4>
-            <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-              Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-            </p>
+          <div class="tab-pane" id="sponsor">
+            <h4>Message From Our Sponsor</h4>
+            <p>"Throughout my life, the best times were always spent in nature. While filming Walker Texas Ranger for eight years, I found
+              relaxation and peace at national parks. If it weren't for nature and wildlife, my success would have taken a hit instead of bad guys on the show. I hope you find as much enjoyment as I have. Remember, life is short and meant to be fun! Click 
+              the button below for a Chuck Norris joke or two. Then, have a happy day!"</p>
+            <figure><img src="images/chucknorris.png">
+              <figcaption>Chuck Norris, Pretty Parks Sponsor</figcaption>
+            </figure>  
+            <p id="chuck-norris-joke"></p>
+            <button id="generate-joke-button">Get Joke</button>
           </div>
         </div>
     </section>
@@ -90,7 +101,6 @@
       </div>
      </div>
     </section>
-
   </main>
 
     <footer>
