@@ -89,3 +89,17 @@ xmlhttp.send();
 
  // Button Click Event Listener
  button.addEventListener('click', generateRandomJoke);
+
+//Dropdown Nav
+
+var navLinks = document.getElementsByClassName('nav-link');
+var dropdowns = document.getElementsByClassName('dropdown');
+
+function toggleDropdown() {
+  this.children[1].classList.toggle('show');
+}
+
+for (i = 0; i < navLinks.length; i++) {
+   navLinks[i].addEventListener('mouseenter', toggleDropdown);
+   navLinks[i].addEventListener('mouseleave', toggleDropdown);
+  }

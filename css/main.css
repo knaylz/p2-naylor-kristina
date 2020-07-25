@@ -65,13 +65,13 @@ body {
   max-width: 100%;
   background-color: #e4eae1;
 }
-nav ul {
+.nav-menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
 }
-nav ul li {
+.nav-menu ul li {
   margin: 0% 5%;
 }
 main {
@@ -271,7 +271,7 @@ button {
   .hamburger:focus {
     outline: none;
   }
-  nav {
+  .nav-menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -397,6 +397,55 @@ button {
   .green-white-header {
     background-image: none;
   }
+  .volunteer-nav {
+    background-color: #d38407;
+    width: 100%;
+    padding: 5px;
+  }
+  .volunteer-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 84%;
+    list-style-type: none;
+  }
+  .volunteer-nav ul li {
+    padding: 0% 7%;
+  }
+  /*JS Dropdown Nav Starts*/
+  volunteer-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    border: 2px solid #333;
+  }
+  .dropdown ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+  }
+  .condensed {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+  volunteer-nav ul li {
+    list-style-type: none;
+    width: 25%;
+    height: 30px;
+    text-align: center;
+    border: 2px solid #333;
+  }
+  .dropdown ul li {
+    width: 100%;
+  }
+  /*JS Dropdown Nav Ends*/
   .volunteer-section {
     background-color: #383f34;
     padding: 1% 7% 7% 7%;
@@ -542,7 +591,7 @@ button {
   .hamburger {
     display: none;
   }
-  nav {
+  .nav-menu {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
