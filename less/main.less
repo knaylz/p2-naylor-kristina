@@ -55,6 +55,9 @@ body {
     min-height: 100vh;
     margin: @margin-0;
     max-width:100%;
+}
+
+.body-what-we-do {
     background-color: @lightgreen;
 }
 
@@ -84,24 +87,6 @@ main {
     margin: 0% 30%;
 }
 
-.home-hero {
-    background-image: url("../images/walking.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 650px;
-    position: relative;
-}
-
-.home-hero-overlay-message {
-    background-color: rgba(255, 255, 255, .5);
-    position: absolute;
-    padding: 1% 4.5%;
-    top: 15%;
-    right: 4%;
-    border-radius: 2px;
-}
-
 .home-icon-p {
     font-size: 2.25rem;
     font-weight: bold;
@@ -117,12 +102,15 @@ main {
 .quote-by-line {
     font-size: 1.25rem;
     font-weight: bold;
-    background-color: @yellow;
-    padding: 3px;
+    background-color: #d3ad00;
+    padding: 5px 10px;
     float: right;
+    line-height: 1.75rem;
     text-align: center;
+    margin-bottom: 1px;
     margin-right: 15px;
-    margin-bottom: 5px;
+    border-radius: 2px;
+    margin-top: 0px;
 }
 
 .home-section {
@@ -281,13 +269,6 @@ button {
         justify-content: center;
     }
 
-    .logo {
-        padding-left: @padding-10;
-        margin-left: 2px;
-        max-width: 200px;
-        padding-top: 10px;
-    }
-
     .hamburger {
         display: block;
         background-color: transparent;
@@ -296,18 +277,69 @@ button {
         font-size: 15px;
         cursor: pointer;
         float: right;
+        padding: 10px 0px!important;
     }
 
     .hamburger:focus {
        outline: none;
   }
+
+    .logo {
+        display: none;
+    }
+
+    .mobile-logo {
+        display: block;
+        max-width: 60%;
+        margin-left: 2%;
+        margin-top: 5%;
+        text-align: center;
+        position: absolute;
+    }
+
     .nav-menu {                             //should this be nav-tab?        or do these do anything anyway?
        display: flex;
        flex-wrap: wrap;
        justify-content: flex-end;
-       margin-left:20%;
+       //margin-left:20%;
        margin-top: 1%;
-       width: 70%;
+       //width: 70%;
+       width: 100%;
+   }
+
+   .nav-menu ul li {
+       margin: 0% 0%;
+       width: 100%;
+       text-align: center;
+       margin: 1%;
+       padding: .5%;
+   }
+
+  ul {     //So hamburger menu fits 100%
+      margin-block-end: 0em;
+      padding-inline-start: 0px;
+   }
+
+   .home-hero {
+    background-image: url("../images/walking.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    position: relative;
+}
+
+   .home-hero-overlay-message {
+    background-color: rgba(255, 255, 255, .5);
+    position: absolute;
+    padding: 1% 4.5%;
+    top: 15%;
+    right: 7%;
+    border-radius: 5px;
+}
+
+   .home-section h2 {
+       font-size: 1rem;
    }
 
    .footer-divs {
@@ -413,6 +445,7 @@ button {
           text-decoration: none;
           width: 100%;
           display: block;
+          margin-top: 0px;
       }
 
       .nav-ul.show li {
@@ -427,6 +460,7 @@ button {
 
       .green-white-header {
         background-image: none;
+        position: relative;
     }
 
 // Volunteer Page
@@ -463,10 +497,6 @@ volunteer-nav ul {
 
 .condensed {
     display: none;
-}
-
-.show {
-    display: block;
 }
 
 volunteer-nav ul li {
@@ -603,7 +633,19 @@ volunteer-nav ul li {
     display: block;
 }
 }
+////////////////////////////////// Media Query Min-Width: 375px Start /////////////////////////////////
+@media(min-width: 375px) {
+    .mobile-logo {
+        margin-left: 2%;
+        margin-top: 1.75%;
+        text-align: center;
+    }
 
+    .home-hero-overlay-message {
+        right: 13%;
+    }
+}
+////////////////////////////////// Media Query Min-Width: 375px End ///////////////////////////////////
 ////////////////////////////////// Media Query Min-Width 415px Start //////////////////////////////////
 
 
@@ -612,6 +654,15 @@ volunteer-nav ul li {
         padding-right: 2%;
         display: flex;
         justify-content: flex-end;
+    }
+
+    .mobile-logo {
+        margin-top: 2%;
+        text-align: center;
+    }
+
+    .home-hero-overlay-message {
+        right: 16%;
     }
 }
 
@@ -622,14 +673,46 @@ volunteer-nav ul li {
     flex-wrap: nowrap;
     margin: 5% 2%;
  }
+
+ .hamburger {
+     padding: 50px 25px!important;
 }   
 
+.home-hero-overlay-message {
+    right: 4%;
+}
+
+}
 ////////////////////////////////// Media Query Min-Width 1024px Start //////////////////////////////////
 
 @media(min-width: 1024px) {
 
  //Global
  
+ .logo {
+     display: block;
+     padding-left: @padding-10;
+     margin-left: 2px;
+     max-width: 200px;
+     padding-top: 10px;
+ }
+
+    .mobile-logo {
+        display: none;
+}
+
+ ul {     //For desktop nav menu
+    padding-inline-start: 40px;
+ }
+
+ .home-hero {
+    height: 650px;
+}
+
+.home-section h2 {
+    font-size: 1.5rem;
+}
+
  .footer-divs {
     flex-wrap: no-wrap;
    }  
@@ -654,6 +737,11 @@ volunteer-nav ul li {
 
     .nav-menu {
         justify-content: space-between;
+    }
+
+    .nav-menu ul li {
+        width: 25%;
+        padding: 0;
     }
 
 //What We Do Page
@@ -744,6 +832,11 @@ volunteer-nav ul li {
 ////////////////////////////////// Media Query Min-Width 1300px Start //////////////////////////////////
 
 @media(min-width:1300px) {
+
+    .nav-menu ul li {
+        margin: 0;
+        width: 16%;
+    }    
 
 //Home Page
     .home-icons-div {
