@@ -66,10 +66,6 @@ body {
     list-style-type: none;
 }
 
-.nav-menu ul li {
-    margin: 0% 5%;
-}
-
 main {
     flex: 1;
     max-width: 100%;
@@ -158,52 +154,17 @@ footer {
   height: 650px;
 }
 
-.what-we-do-page-section h2 {
-  color: @white;
-  font-size: 2.5rem;
-}
-
-.what-we-do-page-section-amanda {
-  height: 900px;
-  position: relative;
-  background-color: @kellygreen;
-}
-
 .what-we-do-before-bottom-div-amanda {
-    margin-bottom: 10%;
-    margin-top: 5%;
-}
-
-.what-we-do-page-section-amanda h2 {
-  font-size: 2rem;
+    padding-bottom: 10%;
+    padding-top: 5%;
 }
 
 .what-we-do-page-section-amanda p {
   font-size: 1.12rem;
 }
 
-.green-overlapping-div h2 {
-  font-size: 2rem;
-  color: @darkgreen;
-}
-
-.what-we-do-hero {
-    background-color: #E4EAE1;
-    height: 550px;
-    display: flex;
-}
-
 .what-we-do-hero-text p {
   margin-bottom: 8%;
-}
-
-.what-we-do-page-center-h2 {
-  text-align: center;
-  font-size: 2.25rem;
-  padding: 5% 0%;
-  background-color: @darkgreen;
-  margin: 0;
-  color: @white;
 }
 
 .button-primary {
@@ -212,13 +173,6 @@ footer {
   border-radius: 3px;
   color: #fff;
   text-decoration: none;
-}
-
-.what-we-do-hero-text h1 {
-    color: #383F34;
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin: 0;
 }
 
 .what-we-do-page-section {
@@ -308,10 +262,9 @@ button {
    }
 
    .nav-menu ul li {
-       margin: 0% 0%;
        width: 100%;
        text-align: center;
-       margin: 1%;
+       margin: 1% 0%;
        padding: .5%;
    }
 
@@ -348,6 +301,13 @@ button {
     justify-content: center;
    }  
 
+   .what-we-do-page-section-amanda {
+    height: 750px;
+    max-width: 100%;
+    position: relative;
+    background-color: @yellow;
+  }
+
    .footer-left-div {
     text-align: center;
     color: @lightgreen;
@@ -377,7 +337,7 @@ button {
 
     .what-we-do-hero-text {
         float: none;
-        padding: 8% 0% 8% 0%;
+        padding: 0%;
         width: 80%;
         text-align: center;
         margin: auto;
@@ -390,7 +350,7 @@ button {
     }
 
     .green-overlapping-div {
-        background-color: @lightgreen;
+        background-color: @darkgreen;
         width: 100%;
         float: none;
         position: relative;
@@ -400,6 +360,11 @@ button {
         border-radius: 0px;
         text-align: center;
     }
+
+    .green-overlapping-div h2 {
+        font-size: 2rem;
+        color: @white;
+      }
     
     .what-we-do-green-daisy {
         display: none;
@@ -408,7 +373,7 @@ button {
       .what-we-do-page-section p {
         text-align: center;
         font-size: 1.15rem;
-        color: @darkgreen;
+        color: @white;
     }
 
     .amanda-img {
@@ -462,6 +427,38 @@ button {
         background-image: none;
         position: relative;
     }
+// What We Do Page
+.what-we-do-hero-text h1 {
+    color: #383F34;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.what-we-do-hero {
+    background-color: #E4EAE1;
+    height: 450px;
+    display: flex;
+}
+
+.what-we-do-page-center-h2 {
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 5% 0%;
+    background-color: @darkgreen;
+    margin: 0;
+    color: @white;
+  }
+  
+  .what-we-do-page-center-h2-amanda {
+      text-align: center;
+      font-size: 1.25rem;
+      padding: 5% 0% 0%;
+      background-color: @yellow;
+      margin: 0;
+      color: @darkgreen;
+  }
+
 
 // Volunteer Page
 
@@ -521,7 +518,7 @@ volunteer-nav ul li {
     color: @lightgreen;
     padding: 4%;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .volunteer-yellow-span {
@@ -645,7 +642,6 @@ volunteer-nav ul li {
         right: 13%;
     }
 }
-////////////////////////////////// Media Query Min-Width: 375px End ///////////////////////////////////
 ////////////////////////////////// Media Query Min-Width 415px Start //////////////////////////////////
 
 
@@ -665,7 +661,14 @@ volunteer-nav ul li {
         right: 16%;
     }
 }
+////////////////////////////////// Media Query Min-Width 621px Start ///////////////////////////////////
 
+@media(min-width: 621px) {
+    .what-we-do-page-section-amanda {
+        height: 850px;
+        padding-bottom: 9%;
+    }
+}
 ////////////////////////////////// Media Query Min-Width 768px Start ///////////////////////////////////
 
 @media(min-width: 768px) {
@@ -713,6 +716,14 @@ volunteer-nav ul li {
     font-size: 1.5rem;
 }
 
+.what-we-do-page-section-amanda {
+    background-color: @kellygreen;
+}
+
+.what-we-do-page-section p {
+        color: @darkgreen;
+}
+
  .footer-divs {
     flex-wrap: no-wrap;
    }  
@@ -750,6 +761,23 @@ volunteer-nav ul li {
       display: flex;
       }
 
+      .what-we-do-hero-text h1 {
+        font-size: 2.5rem;
+    }  
+
+    .what-we-do-hero {
+        height: 550px;
+    }
+
+    .what-we-do-page-center-h2, .what-we-do-page-center-h2-amanda {
+        font-size: 2.25rem;
+      }
+
+    .what-we-do-page-center-h2-amanda {
+        background-color: @kellygreen;
+        color: @white;
+    }
+
     .jessica-img {
         position: absolute;
         margin-left: 5%;
@@ -757,6 +785,7 @@ volunteer-nav ul li {
     }
 
     .green-overlapping-div {
+        background-color: @lightgreen;
         width: 40%;
         float: right;
         position: absolute;
@@ -766,7 +795,16 @@ volunteer-nav ul li {
         border-radius: 1px;
         text-align: left;
       }
-    
+
+    .green-overlapping-div h2 {
+        font-size: 2rem;
+        color: @darkgreen;
+    }
+
+    .what-we-do-hero-text {
+        padding: 8% 0% 8% 0%;
+    }
+
     .what-we-do-green-daisy {
         display: block;
       }
@@ -778,7 +816,8 @@ volunteer-nav ul li {
     .amanda-img {
         position: absolute;
         margin-left: 32%;
-        margin-top: 7%;
+        margin-top: 5%;
+        padding-bottom: 5%;
         float: right;
         max-width: 60%;
       }
@@ -801,6 +840,12 @@ volunteer-nav ul li {
     .green-white-header {
         background-image: url("../images/green-white-header.jpg");
         background-size: cover;
+    }
+
+    //Volunteer Page
+
+    .volunteer-section h1 {
+        font-size: 3rem;
     }
 }
 

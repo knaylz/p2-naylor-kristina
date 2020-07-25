@@ -73,9 +73,6 @@ body {
   display: flex;
   list-style-type: none;
 }
-.nav-menu ul li {
-  margin: 0% 5%;
-}
 main {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -149,46 +146,15 @@ footer {
   position: relative;
   height: 650px;
 }
-.what-we-do-page-section h2 {
-  color: #ffffff;
-  font-size: 2.5rem;
-}
-.what-we-do-page-section-amanda {
-  height: 900px;
-  position: relative;
-  background-color: #538731;
-}
 .what-we-do-before-bottom-div-amanda {
-  margin-bottom: 10%;
-  margin-top: 5%;
-}
-.what-we-do-page-section-amanda h2 {
-  font-size: 2rem;
+  padding-bottom: 10%;
+  padding-top: 5%;
 }
 .what-we-do-page-section-amanda p {
   font-size: 1.12rem;
 }
-.green-overlapping-div h2 {
-  font-size: 2rem;
-  color: #383f34;
-}
-.what-we-do-hero {
-  background-color: #E4EAE1;
-  height: 550px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
 .what-we-do-hero-text p {
   margin-bottom: 8%;
-}
-.what-we-do-page-center-h2 {
-  text-align: center;
-  font-size: 2.25rem;
-  padding: 5% 0%;
-  background-color: #383f34;
-  margin: 0;
-  color: #ffffff;
 }
 .button-primary {
   background: #383f34;
@@ -196,12 +162,6 @@ footer {
   border-radius: 3px;
   color: #fff;
   text-decoration: none;
-}
-.what-we-do-hero-text h1 {
-  color: #383F34;
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin: 0;
 }
 .what-we-do-page-section {
   background-color: #383f34;
@@ -279,10 +239,9 @@ button {
     width: 100%;
   }
   .nav-menu ul li {
-    margin: 0% 0%;
     width: 100%;
     text-align: center;
-    margin: 1%;
+    margin: 1% 0%;
     padding: .5%;
   }
   ul {
@@ -321,6 +280,12 @@ button {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .what-we-do-page-section-amanda {
+    height: 750px;
+    max-width: 100%;
+    position: relative;
+    background-color: #d3ad00;
+  }
   .footer-left-div {
     text-align: center;
     color: #e4eae1;
@@ -351,7 +316,7 @@ button {
   }
   .what-we-do-hero-text {
     float: none;
-    padding: 8% 0% 8% 0%;
+    padding: 0%;
     width: 80%;
     text-align: center;
     margin: auto;
@@ -362,7 +327,7 @@ button {
     max-width: 100%;
   }
   .green-overlapping-div {
-    background-color: #e4eae1;
+    background-color: #383f34;
     width: 100%;
     float: none;
     position: relative;
@@ -372,13 +337,17 @@ button {
     border-radius: 0px;
     text-align: center;
   }
+  .green-overlapping-div h2 {
+    font-size: 2rem;
+    color: #ffffff;
+  }
   .what-we-do-green-daisy {
     display: none;
   }
   .what-we-do-page-section p {
     text-align: center;
     font-size: 1.15rem;
-    color: #383f34;
+    color: #ffffff;
   }
   .amanda-img {
     position: relative;
@@ -425,6 +394,35 @@ button {
   .green-white-header {
     background-image: none;
     position: relative;
+  }
+  .what-we-do-hero-text h1 {
+    color: #383F34;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  .what-we-do-hero {
+    background-color: #E4EAE1;
+    height: 450px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .what-we-do-page-center-h2 {
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 5% 0%;
+    background-color: #383f34;
+    margin: 0;
+    color: #ffffff;
+  }
+  .what-we-do-page-center-h2-amanda {
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 5% 0% 0%;
+    background-color: #d3ad00;
+    margin: 0;
+    color: #383f34;
   }
   .volunteer-nav {
     background-color: #d38407;
@@ -480,7 +478,7 @@ button {
     color: #e4eae1;
     padding: 4%;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .volunteer-yellow-span {
     color: #d3ad00;
@@ -608,6 +606,12 @@ button {
     right: 16%;
   }
 }
+@media (min-width: 621px) {
+  .what-we-do-page-section-amanda {
+    height: 850px;
+    padding-bottom: 9%;
+  }
+}
 @media (min-width: 768px) {
   .home-icons-div {
     -ms-flex-wrap: nowrap;
@@ -643,6 +647,12 @@ button {
   .home-section h2 {
     font-size: 1.5rem;
   }
+  .what-we-do-page-section-amanda {
+    background-color: #538731;
+  }
+  .what-we-do-page-section p {
+    color: #383f34;
+  }
   .footer-divs {
     -ms-flex-wrap: no-wrap;
         flex-wrap: no-wrap;
@@ -675,12 +685,27 @@ button {
     display: -ms-flexbox;
     display: flex;
   }
+  .what-we-do-hero-text h1 {
+    font-size: 2.5rem;
+  }
+  .what-we-do-hero {
+    height: 550px;
+  }
+  .what-we-do-page-center-h2,
+  .what-we-do-page-center-h2-amanda {
+    font-size: 2.25rem;
+  }
+  .what-we-do-page-center-h2-amanda {
+    background-color: #538731;
+    color: #ffffff;
+  }
   .jessica-img {
     position: absolute;
     margin-left: 5%;
     max-width: 60%;
   }
   .green-overlapping-div {
+    background-color: #e4eae1;
     width: 40%;
     float: right;
     position: absolute;
@@ -689,6 +714,13 @@ button {
     padding: 2%;
     border-radius: 1px;
     text-align: left;
+  }
+  .green-overlapping-div h2 {
+    font-size: 2rem;
+    color: #383f34;
+  }
+  .what-we-do-hero-text {
+    padding: 8% 0% 8% 0%;
   }
   .what-we-do-green-daisy {
     display: block;
@@ -699,7 +731,8 @@ button {
   .amanda-img {
     position: absolute;
     margin-left: 32%;
-    margin-top: 7%;
+    margin-top: 5%;
+    padding-bottom: 5%;
     float: right;
     max-width: 60%;
   }
@@ -719,6 +752,9 @@ button {
   .green-white-header {
     background-image: url("../images/green-white-header.jpg");
     background-size: cover;
+  }
+  .volunteer-section h1 {
+    font-size: 3rem;
   }
 }
 @media (min-width: 1100px) {
