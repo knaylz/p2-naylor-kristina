@@ -202,6 +202,10 @@ button {
   text-decoration: none;
 }
 
+.button-orange {
+    background-color: @orange!important;
+}
+
 /////////////////// Volunteer Page /////////////////
 .tab-pane { 
     display: none;
@@ -209,10 +213,6 @@ button {
   
 .tab-pane.active { 
     display: block; 
-}
-
-.show {
-    display: block;
 }
 
 .volunteer-img {
@@ -239,7 +239,7 @@ button {
         font-size: 15px;
         cursor: pointer;
         float: right;
-        padding: 10px 0px!important;
+        padding: 15px 0px 0px 0px!important
     }
 
     .hamburger:focus {
@@ -476,8 +476,8 @@ button {
 }
 
 .volunteer-nav ul li {
-    padding: 0% 7%;
-    margin-bottom: 6%;
+    padding: 0% 4%;
+    margin-bottom: 1%;
 }
 
 /*JS Dropdown Nav Starts*/
@@ -485,6 +485,7 @@ volunteer-nav ul {
     display: flex;
     padding: 0;
     border: 2px solid #333;
+    
 }
 
 .dropdown ul {
@@ -492,6 +493,8 @@ volunteer-nav ul {
     background-color: #333;
     color: #fff;
     text-align: center;
+    width:100px;
+    border-radius: 0px 0px 5px 5px;
 }
 
 .condensed {
@@ -674,6 +677,10 @@ volunteer-nav ul li {
     .home-hero-overlay-message {
         right: 13%;
     }
+
+    .hamburger {
+        padding: 10px 0px!important;
+    }
 }
 ////////////////////////////////// Media Query Min-Width 415px Start //////////////////////////////////
 
@@ -703,7 +710,7 @@ volunteer-nav ul li {
     }
     .volunteer-nav ul {
         display: flex;
-        margin-left: 84%;
+        margin-right: 2%;
         justify-content: flex-end;
     }
 }

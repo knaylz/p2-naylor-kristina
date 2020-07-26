@@ -185,13 +185,13 @@ button {
   color: #fff;
   text-decoration: none;
 }
+.button-orange {
+  background-color: #d38407 !important;
+}
 .tab-pane {
   display: none;
 }
 .tab-pane.active {
-  display: block;
-}
-.show {
   display: block;
 }
 .volunteer-img {
@@ -216,7 +216,7 @@ button {
     font-size: 15px;
     cursor: pointer;
     float: right;
-    padding: 10px 0px!important;
+    padding: 15px 0px 0px 0px !important;
   }
   .hamburger:focus {
     outline: none;
@@ -435,8 +435,8 @@ button {
     width: 100%;
   }
   .volunteer-nav ul li {
-    padding: 0% 7%;
-    margin-bottom: 6%;
+    padding: 0% 4%;
+    margin-bottom: 1%;
   }
   /*JS Dropdown Nav Starts*/
   volunteer-nav ul {
@@ -454,6 +454,8 @@ button {
     background-color: #333;
     color: #fff;
     text-align: center;
+    width: 100px;
+    border-radius: 0px 0px 5px 5px;
   }
   .condensed {
     display: none;
@@ -621,6 +623,9 @@ button {
   .home-hero-overlay-message {
     right: 13%;
   }
+  .hamburger {
+    padding: 10px 0px!important;
+  }
 }
 @media (min-width: 415px) {
   .top-bar-div {
@@ -649,7 +654,7 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 84%;
+    margin-right: 2%;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
