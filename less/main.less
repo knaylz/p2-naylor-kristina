@@ -120,7 +120,6 @@ main {
     position: absolute;
 }
 
-
 .social-icons {
     display: flex;
 }
@@ -244,7 +243,7 @@ button {
 
     .hamburger:focus {
        outline: none;
-  }
+    }
 
     .logo {
         display: none;
@@ -259,7 +258,7 @@ button {
         position: absolute;
     }
 
-    .nav-menu {                             //should this be nav-tab?        or do these do anything anyway?
+    .nav-menu {                          
        display: flex;
        flex-wrap: wrap;
        justify-content: flex-end;
@@ -276,10 +275,10 @@ button {
        padding: .5%;
    }
 
-  ul {     //So hamburger menu fits 100%
+   ul {     //So hamburger menu fits 100%
       margin-block-end: 0em;
       padding-inline-start: 0px;
-   }
+    }
 
    .home-hero {
     background-image: url("../images/walking.jpg");
@@ -288,7 +287,7 @@ button {
     background-repeat: no-repeat;
     height: 350px;
     position: relative;
-}
+    }
 
    .home-hero-overlay-message {
     background-color: rgba(255, 255, 255, .5);
@@ -297,7 +296,7 @@ button {
     top: 15%;
     right: 7%;
     border-radius: 5px;
-}
+    }
 
    .home-section h2 {
        font-size: 1rem;
@@ -314,7 +313,7 @@ button {
     max-width: 100%;
     position: relative;
     background-color: @yellow;
-  }
+    }
 
    .footer-left-div {
     text-align: center;
@@ -332,216 +331,204 @@ button {
    }
 
 //Home Page
-    .home-icons-div {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin: 5% 18%;
-    }    
+   .home-icons-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5% 18%;
+   }    
 
-    .white-breasted-bird-img {
-        display: none;
-    }
+   .white-breasted-bird-img {
+    display: none;
+   }
 
-    .what-we-do-hero-text {
-        float: none;
-        padding: 0%;
-        width: 80%;
-        text-align: center;
-        margin: auto;
-    }
+   .what-we-do-hero-text {
+    float: none;
+    padding: 0%;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+   }
 
-    .jessica-img {
-        position: relative;
-        margin-left: 0%;
-        max-width: 100%;
-    }
+   .jessica-img {
+    position: relative;
+    margin-left: 0%;
+    max-width: 100%;
+   }
 
-    .green-overlapping-div {
-        background-color: @darkgreen;
-        width: 100%;
-        float: none;
-        position: relative;
-        margin-left: 0%;
-        margin-top: 0%;
-        padding: 0%;
-        border-radius: 0px;
-        text-align: center;
+   .green-overlapping-div {
+    background-color: @darkgreen;
+    width: 100%;
+    float: none;
+    position: relative;
+    margin-left: 0%;
+    margin-top: 0%;
+    padding: 0%;
+    border-radius: 0px;
+    text-align: center;
     }
 
     .green-overlapping-div h2 {
-        font-size: 1.25rem;
-        color: @white;
-      }
+     font-size: 1.25rem;
+     color: @white;
+    }
     
     .what-we-do-green-daisy {
-        display: none;
-      }
+    display: none;
+    }
 
-      .what-we-do-page-section p {
-        text-align: center;
-        font-size: 1.15rem;
-        color: @white;
+    .what-we-do-page-section p {
+    text-align: center;
+    font-size: 1.15rem;
+    color: @white;
     }
 
     .amanda-img {
-        position: relative;
-        margin-left: 0%;
-        margin-top: 0%;
-        float: none;
-        max-width: 100%;
-      }
-
-      .yellow-overlapping-div {
-        background-color: @yellow;
-        width: 100%;
-        float: none;
-        position: relative;
-        margin-left: 0%;
-        margin-top: 0%;
-        padding: 0%;
-        border-radius: 0px;
-        text-align: center;
-      }  
-
-      .what-we-do-yellow-daisy {
-        display: none;
-      }
-
-      .nav-ul {
-        display: none;
-        width: 100%;
-        justify-content: flex-end;
-        margin-top: 0%;
-      }
-
-      .nav-ul.show {
-          text-decoration: none;
-          width: 100%;
-          display: block;
-          margin-top: 0px;
-      }
-
-      .nav-ul.show li {
-          background: @kellygreen;
-          width: 100%;
-      }
-
-      .nav-ul.show li a {
-          text-decoration: none;
-          background: @kellygreen;
-      }
-
-      .green-white-header {
-        background-image: none;
-        position: relative;
+    position: relative;
+    margin-left: 0%;
+    margin-top: 0%;
+    float: none;
+    max-width: 100%;
     }
+
+    .yellow-overlapping-div {
+    background-color: @yellow;
+    width: 100%;
+    float: none;
+    position: relative;
+    margin-left: 0%;
+    margin-top: 0%;
+    padding: 0%;
+    border-radius: 0px;
+    text-align: center;
+    }  
+
+    .what-we-do-yellow-daisy {
+    display: none;
+    }
+
+    .nav-ul {
+    display: none;
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 0%;
+    }
+
+    .nav-ul.show {
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    margin-top: 0px;
+    }
+
+    .nav-ul.show li {
+    background: @kellygreen;
+    width: 100%;
+    }
+
+    .nav-ul.show li a {
+    text-decoration: none;
+    background: @kellygreen;
+    }
+
+    .green-white-header {
+    background-image: none;
+    position: relative;
+    }
+
 // What We Do Page
-.what-we-do-hero-text h1 {
+    .what-we-do-hero-text h1 {
     color: #383F34;
     font-size: 2rem;
     font-weight: bold;
     margin: 0;
-}
+    }
 
-.what-we-do-hero {
+    .what-we-do-hero {
     background-color: #E4EAE1;
     height: 450px;
     display: flex;
-}
+    }
 
-.what-we-do-page-center-h2 {
+    .what-we-do-page-center-h2 {
     text-align: center;
     font-size: 1.25rem;
     padding: 5% 0%;
     background-color: @darkgreen;
     margin: 0;
     color: @white;
-  }
+    }
   
-  .what-we-do-page-center-h2-amanda {
-      text-align: center;
-      font-size: 1.25rem;
-      padding: 5% 0% 5%;
-      background-color: @yellow;
-      margin: 0;
-  }
+    .what-we-do-page-center-h2-amanda {
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 5% 0% 5%;
+    background-color: @yellow;
+    margin: 0;
+    }
 
 
 // Volunteer Page
 
-.volunteer-nav {
+    .volunteer-nav {
     background-color: @orange;
     width: 100%;
-}
+    padding-bottom: 3%;
+    }
 
-.volunteer-nav ul li {
+    .volunteer-nav ul li {
     padding: 0% 4%;
     margin-bottom: 1%;
-}
+    text-align: center;
+    }
 
-/*JS Dropdown Nav Starts*/
-volunteer-nav ul {
-    display: flex;
-    padding: 0;
-    border: 2px solid #333;
-    
-}
-
-.dropdown ul {
+    .dropdown ul {
     flex-direction: column;
     background-color: #333;
     color: #fff;
     text-align: center;
     width:100px;
     border-radius: 0px 0px 5px 5px;
-}
+    }
 
-.condensed {
+    .condensed {
     display: none;
-}
+    }
 
-.show {
+    .show {
     display: block!important;
-}
+    }
 
-.volunteer-nav ul {
+    .volunteer-nav ul {
     display: flex;
     margin-left: 0%;
     list-style-type: none;
     justify-content: center;
-}
+    }
 
-volunteer-nav ul li {
-    list-style-type: none;
-    width: 25%;
-    height: 30px;
-    text-align: center;
-    border: 2px solid #333;
-}
-
-.dropdown ul li {
+    .dropdown ul li {
     width: 100%;
-}
+    }
 
 /*JS Dropdown Nav Ends*/
-.volunteer-section {
+    .volunteer-section {
     background-color: @darkgreen;
     padding: 0%;
-}
+    }
 
-.volunteer-section h1 {
+    .volunteer-section h1 {
     color: @lightgreen;
     padding: 4%;
     text-align: center;
     font-size: 2rem;
-}
+    margin-top: 2%;
+    }
 
-.volunteer-yellow-span {
+    .volunteer-yellow-span {
     color: @yellow;
-}
+    }
 
-.container {
+    .container {
     margin-top: 10%;
     max-width: 900px;
     margin: 0 auto;
@@ -550,23 +537,23 @@ volunteer-nav ul li {
     border-radius: 0px;
     }
 
-.volunteer-quote-section {
+    .volunteer-quote-section {
     background-color: @lightgreen;
-}
+    }
 
-.volunteer-quote-section h2 {
+    .volunteer-quote-section h2 {
     padding: 5% 10% 5% 10%;
     text-align: center;
     color: @darkgreen;
     margin: 0%;
-}
+    }
 
-.around-quote-div {
+    .around-quote-div {
     position: relative;
     padding-bottom: 10%;
-}
+    }
 
-.quote-div {
+    .quote-div {
     background-color: #fff;
     border-radius: 3px;
     padding: 4% 3%;
@@ -576,177 +563,175 @@ volunteer-nav ul li {
     justify-content: center;
     margin: 0% 10%;
     position: relative;
-}
+    }
 
-.quote-div-inside {
+    .quote-div-inside {
     padding: 2% 3% 1% 1%;
-}
+    }
 
-.quote-byline {
+    .quote-byline {
     float: left;
-}
+    }
 /*JS Tabbed Content Starts Here*/
-#nav-tab {
+    #nav-tab {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
     text-align: center;
-}
+    }
 
-#nav-tab li {
-  background-color: @lightgreen;
-  padding: .75% 3%;
-  width: 100%;
-  border-radius: 0px;
-  margin: 2px 00px;
-  text-decoration: none;
-  list-style-type: none;
-}
+    #nav-tab li {
+    background-color: @lightgreen;
+    padding: .75% 3%;
+    width: 100%;
+    border-radius: 0px;
+    margin: 2px 00px;
+    text-decoration: none;
+    list-style-type: none;
+    }
 
-#nav-tab li a {
+    #nav-tab li a {
     text-decoration: none;
     text-align: center;
     font-size: 1rem;
     color: @darkgreen;
     font-weight: bold;
-}
+    }
 
-.nav .active a { 
-  border-bottom: 2px solid @orange;
-  &:hover {
+    .nav .active a { 
+    border-bottom: 2px solid @orange;
+    &:hover {
     border-color: transparent;
     color: white;
-  }
-}
+    }
+    }
 
-.tab-pane { 
-  display: none;
-}
+    .tab-pane { 
+    display: none;
+    }
 
-.tab-pane.active { 
-  display: block; 
-}    
+    .tab-pane.active { 
+    display: block; 
+    }    
 
 //Tabbed Content
-#tabbed-content li {
+    #tabbed-content li {
     display: inline-block;
     padding: 10px 14px;
     background: #ddd;
     border-radius: 4px;
     cursor: pointer;
     margin-right: 10px;
-}
+    }
 
-#tabbed-content .panel {
+    #tabbed-content .panel {
     display: none;
     border: 1px solid #ddd;
     padding: 0 10px;
     border-radius: 4px;
-}
+    }
 
-#tabbed-content .panel.active {
+    #tabbed-content .panel.active {
     display: block;
-}
+    }
 
-.other-staff-section {
+    .other-staff-section {
     background-color: @orange;
     width: 100%;
     padding: 4% 0% 15% 0%;
     text-align: center;
-}
+    }
 
-.family-here-h2 {
+    .family-here-h2 {
     font-size: 1.25rem;
-}
+    }
 
-.down-arrow-family {
+    .down-arrow-family {
     display: block;
     margin: auto;
     padding-bottom: 2%;
-}
+    }
 }
 ////////////////////////////////// Media Query Min-Width: 375px Start /////////////////////////////////
 @media(min-width: 375px) {
     .mobile-logo {
-        margin-left: 2%;
-        margin-top: 1.75%;
-        text-align: center;
+    margin-left: 2%;
+    margin-top: 1.75%;
+    text-align: center;
     }
 
     .home-hero-overlay-message {
-        right: 13%;
+    right: 13%;
     }
 
     .hamburger {
-        padding: 10px 0px!important;
+    padding: 10px 0px!important;
     }
 }
 ////////////////////////////////// Media Query Min-Width 415px Start //////////////////////////////////
 
-
 @media(min-width: 415px) {
     .top-bar-div {
-        padding-right: 2%;
-        display: flex;
-        justify-content: flex-end;
+    padding-right: 2%;
+    display: flex;
+    justify-content: flex-end;
     }
 
     .mobile-logo {
-        margin-top: 2%;
-        text-align: center;
+    margin-top: 2%;
+    text-align: center;
     }
 
     .home-hero-overlay-message {
-        right: 16%;
+    right: 16%;
     }
 }
 ////////////////////////////////// Media Query Min-Width 621px Start ///////////////////////////////////
 
 @media(min-width: 621px) {
     .what-we-do-page-section-amanda {
-        height: 850px;
-        padding-bottom: 9%;
+    height: 850px;
+    padding-bottom: 9%;
     }
     .volunteer-nav ul {
-        display: flex;
-        margin-right: 2%;
-        justify-content: flex-end;
+    display: flex;
+    margin-right: 2%;
+    justify-content: flex-end;
     }
 }
 ////////////////////////////////// Media Query Min-Width 768px Start ///////////////////////////////////
 
 @media(min-width: 768px) {
-.home-icons-div {
+    .home-icons-div {
     flex-wrap: nowrap;
     margin: 5% 2%;
- }
-
- .hamburger {
-     padding: 50px 25px!important;
-}   
-
-.home-hero-overlay-message {
-    right: 4%;
-}
-
- .what-we-do-page-section-amanda {
-        height: 850px;
-        padding-bottom: 9%;
     }
 
-.inside-overlapping-div {
-   justify-content: center;
-}
+    .hamburger {
+    padding: 50px 25px!important;
+    }   
 
-.what-we-do-page-section {
+    .home-hero-overlay-message {
+    right: 4%;
+    }
+
+    .what-we-do-page-section-amanda {
+    height: 850px;
+    padding-bottom: 9%;
+    }
+
+    .inside-overlapping-div {
+    justify-content: center;
+    }
+
+    .what-we-do-page-section {
     padding-bottom: 20%;
-}
+    }
 
-.family-here-h2 {
+    .family-here-h2 {
     font-size: 2rem;
-}
-
+    }
 }
 ////////////////////////////////// Media Query Min-Width 1024px Start //////////////////////////////////
 
@@ -754,43 +739,43 @@ volunteer-nav ul li {
 
  //Global
  
- .logo {
-     display: block;
-     padding-left: @padding-10;
-     margin-left: 2px;
-     max-width: 200px;
-     padding-top: 10px;
- }
+   .logo {
+   display: block;
+   padding-left: @padding-10;
+   margin-left: 2px;
+   max-width: 200px;
+   padding-top: 10px;
+   }
 
-    .mobile-logo {
-        display: none;
-}
+   .mobile-logo {
+   display: none;
+   }
 
- ul {     //For desktop nav menu
-    padding-inline-start: 40px;
- }
+   ul {     //For desktop nav menu
+   padding-inline-start: 40px;
+    }
 
- .home-hero {
+   .home-hero {
     height: 650px;
-}
+    }
 
-.home-section h2 {
+    .home-section h2 {
     font-size: 1.5rem;
-}
+    }
 
-.what-we-do-page-section-amanda {
+    .what-we-do-page-section-amanda {
     background-color: @kellygreen;
-}
+    }
 
-.what-we-do-page-section {
+    .what-we-do-page-section {
     padding-bottom: 0%;
-}
+    }
 
-.what-we-do-page-section p {
-        color: @darkgreen;
-}
+    .what-we-do-page-section p {
+    color: @darkgreen;
+    }
 
- .footer-divs {
+   .footer-divs {
     flex-wrap: no-wrap;
    }  
 
@@ -803,147 +788,151 @@ volunteer-nav ul li {
     width: 30%;
    }
 
-    .logo {
-        max-width: 350px;
-        padding-top: 0px;
-    }
+   .logo {
+   max-width: 350px;
+   padding-top: 0px;
+   }
 
-    .hamburger {
-        display: none;
-    }
+   .hamburger {
+   display: none;
+   }
 
-    .nav-menu {
-        justify-content: space-between;
-    }
+   .nav-menu {
+   justify-content: space-between;
+   }
 
     .nav-menu ul li {
-        width: 25%;
-        padding: 0;
-    }
+    width: 25%;
+    padding: 0;
+   }
 
 //What We Do Page
 
-    .nav-ul {
-      display: flex;
-      margin-top: 2%;
-      }
+   .nav-ul {
+   display: flex;
+   margin-top: 2%;
+   }
 
-      .what-we-do-hero-text h1 {
-        font-size: 2.5rem;
+   .what-we-do-hero-text h1 {
+   font-size: 2.5rem;
     }  
 
     .what-we-do-hero {
-        height: 550px;
+    height: 550px;
     }
 
     .what-we-do-page-center-h2, .what-we-do-page-center-h2-amanda {
-        font-size: 2.25rem;
-      }
+    font-size: 2.25rem;
+    }
 
     .what-we-do-page-center-h2-amanda {
-        background-color: @kellygreen;
-        color: @white;
-        padding: 5% 0% 0%;
+    background-color: @kellygreen;
+    color: @white;
+    padding: 5% 0% 0%;
     }
 
     .jessica-img {
-        position: absolute;
-        margin-left: 5%;
-        max-width: 60%;
-        border-radius: 5px;
+    position: absolute;
+    margin-left: 5%;
+    max-width: 60%;
+    border-radius: 5px;
     }
 
     .green-overlapping-div {
-        background-color: @lightgreen;
-        width: 40%;
-        float: right;
-        position: absolute;
-        margin-left: 45%;
-        margin-top: 6%;
-        padding: 2%;
-        border-radius: 5px;
-        text-align: left;
-      }
+    background-color: @lightgreen;
+    width: 40%;
+    float: right;
+    position: absolute;
+    margin-left: 45%;
+    margin-top: 6%;
+    padding: 2%;
+    border-radius: 5px;
+    text-align: left;
+    }
 
     .green-overlapping-div h2 {
-        font-size: 2rem;
-        color: @darkgreen;
+    font-size: 2rem;
+    color: @darkgreen;
     }
 
     .what-we-do-hero-text {
-        padding: 8% 0% 8% 0%;
+    padding: 8% 0% 8% 0%;
     }
 
     .what-we-do-green-daisy {
-        display: block;
-      }
+    display: block;
+    }
 
     .what-we-do-page-section p {
-        text-align: left;
+    text-align: left;
     }
 
     .amanda-img {
-        position: absolute;
-        margin-left: 32%;
-        margin-top: 5%;
-        padding-bottom: 5%;
-        float: right;
-        max-width: 60%;
-        border-radius: 5px;
-      }
+    position: absolute;
+    margin-left: 32%;
+    margin-top: 5%;
+    padding-bottom: 5%;
+    float: right;
+    max-width: 60%;
+    border-radius: 5px;
+    }
 
     .yellow-overlapping-div {
-        width: 40%;
-        float: left;
-        position: absolute;
-        margin-left: 10%;
-        margin-top: 12%;
-        padding: 2%;
-        border-radius: 5px;
-        text-align: left;
-      }
+    width: 40%;
+    float: left;
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 12%;
+    padding: 2%;
+    border-radius: 5px;
+    text-align: left;
+    }
 
     .what-we-do-yellow-daisy {
-        display: block;
+    display: block;
     }
 
     .green-white-header {
-        background-image: url("../images/green-white-header.jpg");
-        background-size: cover;
+    background-image: url("../images/green-white-header.jpg");
+    background-size: cover;
     }
 
     .other-staff-section {
-        padding: 4% 0%;
+    padding: 4% 0%;
     }
 
     //Volunteer Page
 
     .volunteer-section h1 {
-        font-size: 3rem;
+    font-size: 3rem;
     }
 
     .quote-div {
-        flex-wrap: nowrap;
-        margin: 0% 20%;
+    flex-wrap: nowrap;
+    margin: 0% 20%;
     }
 
     .volunteer-section {
-        padding: 1% 7% 7% 7%;
+    padding: 1% 7% 7% 7%;
+    }
+
+    .volunteer-nav {
+    padding-bottom: 0%;
     }
 
     #nav-tab {
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
     }
     
     #nav-tab li {
-      border-radius: 30px 30px 0px 0px;
-      margin: 0px 10px;
-      width: 150px;
+    border-radius: 30px 30px 0px 0px;
+    margin: 0px 10px;
+    width: 150px;
     }
 
     .container {
-        border-radius: 30px;
-        max-width: 1100px;
+    border-radius: 30px;
+    max-width: 1100px;
     }
 }
 
@@ -951,17 +940,17 @@ volunteer-nav ul li {
 
 @media(min-width:1100px) {
     .white-breasted-bird-img {
-        float: right;
-        max-height: 550px;
-        display: block;
+    float: right;
+    max-height: 550px;
+    display: block;
     }
 
     .what-we-do-hero-text {
-        float: left;
-        padding: 8% 0% 8% 5%;
-        max-width: 100%;
-        text-align: left;
-        margin: 0;
+    float: left;
+    padding: 8% 0% 8% 5%;
+    max-width: 100%;
+    text-align: left;
+    margin: 0;
     }
 }
 
@@ -969,7 +958,7 @@ volunteer-nav ul li {
 
 @media(min-width:1200px) {
     .home-icons-div {
-      margin: 5% 12%;
+    margin: 5% 12%;
     }
 }
 ////////////////////////////////// Media Query Min-Width 1300px Start //////////////////////////////////
@@ -977,14 +966,14 @@ volunteer-nav ul li {
 @media(min-width:1300px) {
 
     .nav-menu ul li {
-        margin: 0;
-        width: 16%;
+    margin: 0;
+    width: 16%;
     }    
 
     .nav-ul {
-        display: flex;
-        margin-top: 1%;
-        }
+    display: flex;
+    margin-top: 1%;
+    }
 
 //Home Page
     .home-icons-div {
@@ -992,16 +981,16 @@ volunteer-nav ul li {
 }
 //What We Do Page
     .what-we-do-before-bottom-div-jessica {
-        background-color: @darkgreen;
+    background-color: @darkgreen;
     }
 
     .what-we-do-before-bottom-div-amanda {
-        background-color: @kellygreen;
+    background-color: @kellygreen;
     }
 
     .what-we-do-bottom-div {
-        max-width: 80%;
-        margin: auto;
+    max-width: 80%;
+    margin: auto;
     }
 
 }
@@ -1010,13 +999,13 @@ volunteer-nav ul li {
 
 @media(min-width:1614px) {
     .white-breasted-bird-img {
-        float: right;
-        max-height: 550px;
-        display: block;
+    float: right;
+    max-height: 550px;
+    display: block;
     }
 
     .what-we-do-hero-text {
-        padding: 8% 20% 8% 10%;
+    padding: 8% 20% 8% 10%;
     }
 }
 
@@ -1024,6 +1013,6 @@ volunteer-nav ul li {
 
 @media(min-width:1900px) {
     .nav-menu {
-        margin-top: .45%;
+    margin-top: .45%;
     }
 } 

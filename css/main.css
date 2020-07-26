@@ -433,18 +433,12 @@ button {
   .volunteer-nav {
     background-color: #d38407;
     width: 100%;
+    padding-bottom: 3%;
   }
   .volunteer-nav ul li {
     padding: 0% 4%;
     margin-bottom: 1%;
-  }
-  /*JS Dropdown Nav Starts*/
-  volunteer-nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 0;
-    border: 2px solid #333;
+    text-align: center;
   }
   .dropdown ul {
     -webkit-box-orient: vertical;
@@ -473,13 +467,6 @@ button {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  volunteer-nav ul li {
-    list-style-type: none;
-    width: 25%;
-    height: 30px;
-    text-align: center;
-    border: 2px solid #333;
-  }
   .dropdown ul li {
     width: 100%;
   }
@@ -493,6 +480,7 @@ button {
     padding: 4%;
     text-align: center;
     font-size: 2rem;
+    margin-top: 2%;
   }
   .volunteer-yellow-span {
     color: #d3ad00;
@@ -836,6 +824,9 @@ button {
   }
   .volunteer-section {
     padding: 1% 7% 7% 7%;
+  }
+  .volunteer-nav {
+    padding-bottom: 0%;
   }
   #nav-tab {
     -ms-flex-wrap: nowrap;
