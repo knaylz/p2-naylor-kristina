@@ -211,6 +211,14 @@ button {
     display: block; 
 }
 
+.show {
+    display: block;
+}
+
+.volunteer-img {
+    max-width: 100%;
+}
+
 ////////////////////////////////// Media Query Min-Width 320px Start //////////////////////////////////
 
 //Global
@@ -302,7 +310,7 @@ button {
    }  
 
    .what-we-do-page-section-amanda {
-    height: 750px;
+    height: 650px;
     max-width: 100%;
     position: relative;
     background-color: @yellow;
@@ -362,7 +370,7 @@ button {
     }
 
     .green-overlapping-div h2 {
-        font-size: 2rem;
+        font-size: 1.25rem;
         color: @white;
       }
     
@@ -404,6 +412,7 @@ button {
         display: none;
         width: 100%;
         justify-content: flex-end;
+        margin-top: 0%;
       }
 
       .nav-ul.show {
@@ -453,10 +462,9 @@ button {
   .what-we-do-page-center-h2-amanda {
       text-align: center;
       font-size: 1.25rem;
-      padding: 5% 0% 0%;
+      padding: 5% 0% 5%;
       background-color: @yellow;
       margin: 0;
-      color: @darkgreen;
   }
 
 
@@ -465,17 +473,11 @@ button {
 .volunteer-nav {
     background-color: @orange;
     width: 100%;
-    padding: 5px;
-}
-
-.volunteer-nav ul {
-    display: flex;
-    margin-left: 84%;
-    list-style-type: none;
 }
 
 .volunteer-nav ul li {
     padding: 0% 7%;
+    margin-bottom: 6%;
 }
 
 /*JS Dropdown Nav Starts*/
@@ -496,6 +498,17 @@ volunteer-nav ul {
     display: none;
 }
 
+.show {
+    display: block!important;
+}
+
+.volunteer-nav ul {
+    display: flex;
+    margin-left: 0%;
+    list-style-type: none;
+    justify-content: center;
+}
+
 volunteer-nav ul li {
     list-style-type: none;
     width: 25%;
@@ -511,7 +524,7 @@ volunteer-nav ul li {
 /*JS Dropdown Nav Ends*/
 .volunteer-section {
     background-color: @darkgreen;
-    padding: 1% 7% 7% 7%;
+    padding: 0%;
 }
 
 .volunteer-section h1 {
@@ -531,7 +544,7 @@ volunteer-nav ul li {
     margin: 0 auto;
     background-color: #fff;
     padding: 5%;
-    border-radius: 30px;
+    border-radius: 0px;
     }
 
 .volunteer-quote-section {
@@ -556,7 +569,9 @@ volunteer-nav ul li {
     padding: 4% 3%;
     text-align: left;
     display: flex;
-    margin: 0% 20%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0% 10%;
     position: relative;
 }
 
@@ -567,9 +582,10 @@ volunteer-nav ul li {
 .quote-byline {
     float: left;
 }
-
+/*JS Tabbed Content Starts Here*/
 #nav-tab {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin: auto;
     text-align: center;
@@ -578,8 +594,9 @@ volunteer-nav ul li {
 #nav-tab li {
   background-color: @lightgreen;
   padding: .75% 3%;
-  border-radius: 30px 30px 0px 0px;
-  margin: 0px 10px;
+  width: 100%;
+  border-radius: 0px;
+  margin: 2px 00px;
   text-decoration: none;
   list-style-type: none;
 }
@@ -593,10 +610,9 @@ volunteer-nav ul li {
 }
 
 .nav .active a { 
-  border-bottom: 1px solid slateblue;
+  border-bottom: 2px solid @orange;
   &:hover {
     border-color: transparent;
-    background: slateblue;
     color: white;
   }
 }
@@ -628,6 +644,23 @@ volunteer-nav ul li {
 
 #tabbed-content .panel.active {
     display: block;
+}
+
+.other-staff-section {
+    background-color: @orange;
+    width: 100%;
+    padding: 4% 0% 15% 0%;
+    text-align: center;
+}
+
+.family-here-h2 {
+    font-size: 1.25rem;
+}
+
+.down-arrow-family {
+    display: block;
+    margin: auto;
+    padding-bottom: 2%;
 }
 }
 ////////////////////////////////// Media Query Min-Width: 375px Start /////////////////////////////////
@@ -668,6 +701,11 @@ volunteer-nav ul li {
         height: 850px;
         padding-bottom: 9%;
     }
+    .volunteer-nav ul {
+        display: flex;
+        margin-left: 84%;
+        justify-content: flex-end;
+    }
 }
 ////////////////////////////////// Media Query Min-Width 768px Start ///////////////////////////////////
 
@@ -683,6 +721,23 @@ volunteer-nav ul li {
 
 .home-hero-overlay-message {
     right: 4%;
+}
+
+ .what-we-do-page-section-amanda {
+        height: 850px;
+        padding-bottom: 9%;
+    }
+
+.inside-overlapping-div {
+   justify-content: center;
+}
+
+.what-we-do-page-section {
+    padding-bottom: 20%;
+}
+
+.family-here-h2 {
+    font-size: 2rem;
 }
 
 }
@@ -718,6 +773,10 @@ volunteer-nav ul li {
 
 .what-we-do-page-section-amanda {
     background-color: @kellygreen;
+}
+
+.what-we-do-page-section {
+    padding-bottom: 0%;
 }
 
 .what-we-do-page-section p {
@@ -759,6 +818,7 @@ volunteer-nav ul li {
 
     .nav-ul {
       display: flex;
+      margin-top: 2%;
       }
 
       .what-we-do-hero-text h1 {
@@ -776,12 +836,14 @@ volunteer-nav ul li {
     .what-we-do-page-center-h2-amanda {
         background-color: @kellygreen;
         color: @white;
+        padding: 5% 0% 0%;
     }
 
     .jessica-img {
         position: absolute;
         margin-left: 5%;
         max-width: 60%;
+        border-radius: 5px;
     }
 
     .green-overlapping-div {
@@ -792,7 +854,7 @@ volunteer-nav ul li {
         margin-left: 45%;
         margin-top: 6%;
         padding: 2%;
-        border-radius: 1px;
+        border-radius: 5px;
         text-align: left;
       }
 
@@ -820,6 +882,7 @@ volunteer-nav ul li {
         padding-bottom: 5%;
         float: right;
         max-width: 60%;
+        border-radius: 5px;
       }
 
     .yellow-overlapping-div {
@@ -829,7 +892,7 @@ volunteer-nav ul li {
         margin-left: 10%;
         margin-top: 12%;
         padding: 2%;
-        border-radius: 2px;
+        border-radius: 5px;
         text-align: left;
       }
 
@@ -842,10 +905,38 @@ volunteer-nav ul li {
         background-size: cover;
     }
 
+    .other-staff-section {
+        padding: 4% 0%;
+    }
+
     //Volunteer Page
 
     .volunteer-section h1 {
         font-size: 3rem;
+    }
+
+    .quote-div {
+        flex-wrap: nowrap;
+        margin: 0% 20%;
+    }
+
+    .volunteer-section {
+        padding: 1% 7% 7% 7%;
+    }
+
+    #nav-tab {
+        flex-wrap: nowrap;
+    }
+    
+    #nav-tab li {
+      border-radius: 30px 30px 0px 0px;
+      margin: 0px 10px;
+      width: 150px;
+    }
+
+    .container {
+        border-radius: 30px;
+        max-width: 1100px;
     }
 }
 
@@ -883,6 +974,11 @@ volunteer-nav ul li {
         width: 16%;
     }    
 
+    .nav-ul {
+        display: flex;
+        margin-top: 1%;
+        }
+
 //Home Page
     .home-icons-div {
     margin: 5% 16%;
@@ -917,3 +1013,10 @@ volunteer-nav ul li {
     }
 }
 
+//////////////////////////////// Media Query Min-Width 1900px Start ////////////////////////////////////
+
+@media(min-width:1900px) {
+    .nav-menu {
+        margin-top: .45%;
+    }
+} 

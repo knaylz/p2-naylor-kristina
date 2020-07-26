@@ -191,6 +191,12 @@ button {
 .tab-pane.active {
   display: block;
 }
+.show {
+  display: block;
+}
+.volunteer-img {
+  max-width: 100%;
+}
 @media (min-width: 320px) {
   .top-bar-div {
     float: none;
@@ -281,7 +287,7 @@ button {
             justify-content: center;
   }
   .what-we-do-page-section-amanda {
-    height: 750px;
+    height: 650px;
     max-width: 100%;
     position: relative;
     background-color: #d3ad00;
@@ -338,7 +344,7 @@ button {
     text-align: center;
   }
   .green-overlapping-div h2 {
-    font-size: 2rem;
+    font-size: 1.25rem;
     color: #ffffff;
   }
   .what-we-do-green-daisy {
@@ -376,6 +382,7 @@ button {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    margin-top: 0%;
   }
   .nav-ul.show {
     text-decoration: none;
@@ -419,25 +426,17 @@ button {
   .what-we-do-page-center-h2-amanda {
     text-align: center;
     font-size: 1.25rem;
-    padding: 5% 0% 0%;
+    padding: 5% 0% 5%;
     background-color: #d3ad00;
     margin: 0;
-    color: #383f34;
   }
   .volunteer-nav {
     background-color: #d38407;
     width: 100%;
-    padding: 5px;
-  }
-  .volunteer-nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: 84%;
-    list-style-type: none;
   }
   .volunteer-nav ul li {
     padding: 0% 7%;
+    margin-bottom: 6%;
   }
   /*JS Dropdown Nav Starts*/
   volunteer-nav ul {
@@ -459,6 +458,19 @@ button {
   .condensed {
     display: none;
   }
+  .show {
+    display: block!important;
+  }
+  .volunteer-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 0%;
+    list-style-type: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   volunteer-nav ul li {
     list-style-type: none;
     width: 25%;
@@ -472,7 +484,7 @@ button {
   /*JS Dropdown Nav Ends*/
   .volunteer-section {
     background-color: #383f34;
-    padding: 1% 7% 7% 7%;
+    padding: 0%;
   }
   .volunteer-section h1 {
     color: #e4eae1;
@@ -489,7 +501,7 @@ button {
     margin: 0 auto;
     background-color: #fff;
     padding: 5%;
-    border-radius: 30px;
+    border-radius: 0px;
   }
   .volunteer-quote-section {
     background-color: #e4eae1;
@@ -512,7 +524,12 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 0% 20%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0% 10%;
     position: relative;
   }
   .quote-div-inside {
@@ -521,10 +538,13 @@ button {
   .quote-byline {
     float: left;
   }
+  /*JS Tabbed Content Starts Here*/
   #nav-tab {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -534,8 +554,9 @@ button {
   #nav-tab li {
     background-color: #e4eae1;
     padding: .75% 3%;
-    border-radius: 30px 30px 0px 0px;
-    margin: 0px 10px;
+    width: 100%;
+    border-radius: 0px;
+    margin: 2px 00px;
     text-decoration: none;
     list-style-type: none;
   }
@@ -547,11 +568,10 @@ button {
     font-weight: bold;
   }
   .nav .active a {
-    border-bottom: 1px solid slateblue;
+    border-bottom: 2px solid #d38407;
   }
   .nav .active a:hover {
     border-color: transparent;
-    background: slateblue;
     color: white;
   }
   .tab-pane {
@@ -576,6 +596,20 @@ button {
   }
   #tabbed-content .panel.active {
     display: block;
+  }
+  .other-staff-section {
+    background-color: #d38407;
+    width: 100%;
+    padding: 4% 0% 15% 0%;
+    text-align: center;
+  }
+  .family-here-h2 {
+    font-size: 1.25rem;
+  }
+  .down-arrow-family {
+    display: block;
+    margin: auto;
+    padding-bottom: 2%;
   }
 }
 @media (min-width: 375px) {
@@ -611,6 +645,15 @@ button {
     height: 850px;
     padding-bottom: 9%;
   }
+  .volunteer-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 84%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
 }
 @media (min-width: 768px) {
   .home-icons-div {
@@ -623,6 +666,21 @@ button {
   }
   .home-hero-overlay-message {
     right: 4%;
+  }
+  .what-we-do-page-section-amanda {
+    height: 850px;
+    padding-bottom: 9%;
+  }
+  .inside-overlapping-div {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .what-we-do-page-section {
+    padding-bottom: 20%;
+  }
+  .family-here-h2 {
+    font-size: 2rem;
   }
 }
 @media (min-width: 1024px) {
@@ -649,6 +707,9 @@ button {
   }
   .what-we-do-page-section-amanda {
     background-color: #538731;
+  }
+  .what-we-do-page-section {
+    padding-bottom: 0%;
   }
   .what-we-do-page-section p {
     color: #383f34;
@@ -684,6 +745,7 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 2%;
   }
   .what-we-do-hero-text h1 {
     font-size: 2.5rem;
@@ -698,11 +760,13 @@ button {
   .what-we-do-page-center-h2-amanda {
     background-color: #538731;
     color: #ffffff;
+    padding: 5% 0% 0%;
   }
   .jessica-img {
     position: absolute;
     margin-left: 5%;
     max-width: 60%;
+    border-radius: 5px;
   }
   .green-overlapping-div {
     background-color: #e4eae1;
@@ -712,7 +776,7 @@ button {
     margin-left: 45%;
     margin-top: 6%;
     padding: 2%;
-    border-radius: 1px;
+    border-radius: 5px;
     text-align: left;
   }
   .green-overlapping-div h2 {
@@ -735,6 +799,7 @@ button {
     padding-bottom: 5%;
     float: right;
     max-width: 60%;
+    border-radius: 5px;
   }
   .yellow-overlapping-div {
     width: 40%;
@@ -743,7 +808,7 @@ button {
     margin-left: 10%;
     margin-top: 12%;
     padding: 2%;
-    border-radius: 2px;
+    border-radius: 5px;
     text-align: left;
   }
   .what-we-do-yellow-daisy {
@@ -753,8 +818,32 @@ button {
     background-image: url("../images/green-white-header.jpg");
     background-size: cover;
   }
+  .other-staff-section {
+    padding: 4% 0%;
+  }
   .volunteer-section h1 {
     font-size: 3rem;
+  }
+  .quote-div {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin: 0% 20%;
+  }
+  .volunteer-section {
+    padding: 1% 7% 7% 7%;
+  }
+  #nav-tab {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  #nav-tab li {
+    border-radius: 30px 30px 0px 0px;
+    margin: 0px 10px;
+    width: 150px;
+  }
+  .container {
+    border-radius: 30px;
+    max-width: 1100px;
   }
 }
 @media (min-width: 1100px) {
@@ -781,6 +870,12 @@ button {
     margin: 0;
     width: 16%;
   }
+  .nav-ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 1%;
+  }
   .home-icons-div {
     margin: 5% 16%;
   }
@@ -803,5 +898,10 @@ button {
   }
   .what-we-do-hero-text {
     padding: 8% 20% 8% 10%;
+  }
+}
+@media (min-width: 1900px) {
+  .nav-menu {
+    margin-top: .45%;
   }
 }
