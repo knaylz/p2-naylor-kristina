@@ -51,7 +51,7 @@ function onTabClick() {
   var sponsorContent = document.getElementById('sponsor');
 
   if (this.children[0].innerHTML == 'Concerts') {
-    concertsContent.style.display == 'block';
+    concertsContent.style.display = 'block';
   } else if (this.children[0].innerHTML == 'Yoga In The Park') {
     yogaContent.style.display = 'block';
   } else if (this.children[0].innerHTML == 'Cleanups') {
